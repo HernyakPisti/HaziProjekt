@@ -1,6 +1,5 @@
 package hu.mavenprojekt;
 
-
 import hu.mavenprojekt.Components.View.MainMenu;
 import javafx.application.Application;
 import javafx.scene.Scene;

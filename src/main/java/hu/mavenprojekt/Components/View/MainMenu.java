@@ -1,8 +1,7 @@
 
 package hu.mavenprojekt.Components.View;
 
-import java.io.File;
-
+import hu.mavenprojekt.Utils.Utils;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,9 +10,10 @@ import javafx.scene.control.Spinner;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import javafx.stage.FileChooser.ExtensionFilter;
-import hu.mavenprojekt.Utils.Utils;
+import javafx.stage.Stage;
+import org.tinylog.Logger;
+import java.io.File;
 
 
 
@@ -51,23 +51,23 @@ public final class MainMenu implements GUI {
         Button newGameButton = new Button("New Game");
         newGameButton.setDefaultButton(true);
         newGameButton.setOnAction(e -> {
-
+            Logger.info("Clicked on New Game");
             this.gameGUI = new GameGUI(this, this.stage, (int) spinnerX.getValue() * 40, (int) spinnerY.getValue() * 40,
                     (int) spinnerY.getValue(), (int) spinnerX.getValue());
             this.stage.setScene(this.gameGUI.getRoot());
 
         });
 
-        Button cancelButton = new Button("Cancel");
+        Button cancelButton = new Button("Exit");
         cancelButton.setCancelButton(true);
         cancelButton.setOnAction(e -> {
-
+            Logger.info("Clicked on Exit");
             this.stage.close();
         });
 
         Button openFile = new Button("Open level");
         openFile.setOnAction(e -> {
-
+            Logger.info("Clicked on Open level");
             Stage s = new Stage();
             s.setTitle("Open file");
             FileChooser fileChooser = new FileChooser();
@@ -78,6 +78,7 @@ public final class MainMenu implements GUI {
                 this.gameGUI = Utils.setGame(this, file);
                 if (this.gameGUI != null)
                     this.stage.setScene(this.gameGUI.getRoot());
+                    Logger.info("Level successfully loaded from: " + file);
 
             }
 

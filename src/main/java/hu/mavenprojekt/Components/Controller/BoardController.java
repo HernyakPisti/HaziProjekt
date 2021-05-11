@@ -8,6 +8,7 @@ import hu.mavenprojekt.Components.View.BoardGUI;
 import hu.mavenprojekt.Components.View.GUI;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import org.tinylog.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -73,6 +74,7 @@ public final class BoardController {
         ((BoardGUI) boardGUI).draw();
         ((BoardGUI) boardGUI).drawConsole();
         if (checkWin()) {
+            Logger.info("Game finished");
             reset(true);
             h = "";
         }

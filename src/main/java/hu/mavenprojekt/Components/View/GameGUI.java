@@ -12,6 +12,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 import java.io.File;
 
@@ -53,27 +54,32 @@ public final class GameGUI implements GUI {
 
         Button mainMenuButton = new Button("Main Menu");
         mainMenuButton.setOnAction(e -> {
+            Logger.info("Clicked on Main Menu");
             this.stage.setScene(((MainMenu) parent).getScene());
         });
 
-        Button cancelButton = new Button("Cancel");
+        Button cancelButton = new Button("Exit");
         cancelButton.setCancelButton(true);
         cancelButton.setOnAction(e -> {
+            Logger.info("Clicked on Exit");
             this.stage.close();
         });
 
         Button newGameButton = new Button("New Game");
         newGameButton.setOnAction(e -> {
+            Logger.info("Clicked on New Game");
             this.boardGUI.getBoardController().reset(true);
         });
 
         Button restartButton = new Button("Restart");
         restartButton.setOnAction(e -> {
+            Logger.info("Clicked on Restart");
             this.boardGUI.getBoardController().reset();
         });
 
         Button saveButton = new Button("Save Game");
         saveButton.setOnAction(e -> {
+            Logger.info("Clicked on Save Game");
             Stage s = new Stage();
             s.setTitle("Save game");
             FileChooser fileChooser = new FileChooser();
@@ -82,6 +88,7 @@ public final class GameGUI implements GUI {
             fileChooser.setInitialFileName("save.json");
             File f = fileChooser.showSaveDialog(s);
             this.boardGUI.getBoardController().Save(f);
+            Logger.info("Level successfully saved at:" +f);
         });
 
         menu.getChildren().addAll(mainMenuButton, newGameButton, restartButton, saveButton, cancelButton);

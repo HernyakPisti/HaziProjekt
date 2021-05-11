@@ -3,6 +3,7 @@ package hu.mavenprojekt.Components.Controller;
 import hu.mavenprojekt.Components.Model.Board;
 import hu.mavenprojekt.Components.Model.Boardelements.Wall;
 import hu.mavenprojekt.Components.View.GUI;
+import org.tinylog.Logger;
 
 public final class PlayerController {
 
@@ -32,11 +33,11 @@ public final class PlayerController {
                 break;
         }
         if (checkInput(board, x, y, c)) {
-
             board.getPlayer().move(x, y, c);
             flag = true;
+            Logger.info("Moved to: "+(board.getPlayer().getX()+1)+" "+(board.getPlayer().getY()+1));
         }
-
+        if(flag==false) Logger.info("Can't move");
         return flag;
 
     }

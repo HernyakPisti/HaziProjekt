@@ -1,21 +1,23 @@
 package hu.mavenprojekt.Components.View;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
 import hu.mavenprojekt.Components.Model.Board;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
-import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
+import javafx.stage.FileChooser.ExtensionFilter;
 import org.tinylog.Logger;
-
-import java.io.File;
-
 
 public final class GameGUI implements GUI {
     private Scene root = null;
@@ -28,6 +30,8 @@ public final class GameGUI implements GUI {
     private VBox boardPane;
     private Image arrow = null;
     private ImageView imageView = null;
+    private VBox menu = null;
+    private HBox directionBox = null;
 
     public GameGUI(GUI parent, Stage stage_, int screenWidth, int screenHeight, int N, int M) {
         this.base = new HBox();
@@ -50,7 +54,7 @@ public final class GameGUI implements GUI {
     }
 
     public void construct() {
-        VBox menu = new VBox();
+        this.menu = new VBox();
 
         Button mainMenuButton = new Button("Main Menu");
         mainMenuButton.setOnAction(e -> {
@@ -83,33 +87,88 @@ public final class GameGUI implements GUI {
             Stage s = new Stage();
             s.setTitle("Save game");
             FileChooser fileChooser = new FileChooser();
-            fileChooser.setInitialDirectory(new File("./levels"));
+            File directory = new File("./levels");
+            if (!directory.exists()) {
+                directory = new File("../levels");
+                if (!directory.exists())
+                    directory = new File(".");
+            }
+            fileChooser.setInitialDirectory(directory);
             fileChooser.getExtensionFilters().addAll(new ExtensionFilter("JSON Files", "*.json"));
             fileChooser.setInitialFileName("save.json");
             File f = fileChooser.showSaveDialog(s);
+
             this.boardGUI.getBoardController().Save(f);
-            Logger.info("Level successfully saved at:" +f);
         });
 
-        menu.getChildren().addAll(mainMenuButton, newGameButton, restartButton, saveButton, cancelButton);
-        menu.setAlignment(Pos.CENTER);
-        menu.setSpacing(10);
-        menu.setPadding(new Insets(10));
+        this.menu.getChildren().addAll(mainMenuButton, newGameButton, restartButton, saveButton, cancelButton);
+        this.menu.setAlignment(Pos.CENTER);
+        this.menu.setSpacing(10);
+        this.menu.setPadding(new Insets(10));
 
         this.boardPane = new VBox();
 
+        this.directionBox = new HBox();
+        this.directionBox.setAlignment(Pos.CENTER);
+        this.directionBox.setSpacing(10);
+        this.directionBox.setPadding(new Insets(10));
+
+        Label directionLabel = new Label("Current direction: ");
+
+        FileInputStream inputStream;
+        this.imageView = new ImageView();
+        this.imageView.setFitHeight(80);
+        this.imageView.setFitWidth(80);
+        this.arrow= new Image(getClass().getResourceAsStream("/arrow.jpg"));
+        rotateArrow(this.boardGUI.getBoardController().getPlayer().getCurrentHeading());
+
+
+        this.directionBox.getChildren().addAll(directionLabel, imageView);
+
         this.boardPane.setAlignment(Pos.TOP_CENTER);
-        this.boardPane.getChildren().addAll(this.boardGUI.getRoot());
+        this.boardPane.getChildren().addAll(this.directionBox, this.boardGUI.getRoot());
 
         this.base.getChildren().addAll(this.boardPane, menu);
         this.root = new Scene(this.base, screenWidth + 200, screenHeight + 150);
 
         this.root.setOnKeyPressed(e -> {
             String ch = this.boardGUI.getBoardController().move(e);
-
+            if (ch != null)
+                rotateArrow(ch);
         });
     }
 
+    private void rotateArrow(String heading) {
+        if (this.arrow != null) {
+            switch (heading) {
+                case "":
+                    this.imageView.setImage(null);
+                    break;
+                case "a":
+                    if (this.imageView.getImage() == null)
+                        this.imageView.setImage(this.arrow);
+                    this.imageView.setRotate(180);
+                    break;
+                case "s":
+                    if (this.imageView.getImage() == null)
+                        this.imageView.setImage(this.arrow);
+                    this.imageView.setRotate(90);
+                    break;
+                case "d":
+                    if (this.imageView.getImage() == null)
+                        this.imageView.setImage(this.arrow);
+                    this.imageView.setRotate(0);
+                    break;
+                case "w":
+                    if (this.imageView.getImage() == null)
+                        this.imageView.setImage(this.arrow);
+                    this.imageView.setRotate(270);
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 
     public Scene getRoot() {
         return this.root;

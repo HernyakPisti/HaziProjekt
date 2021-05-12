@@ -1,7 +1,9 @@
 
 package hu.mavenprojekt.Components.View;
 
-import hu.mavenprojekt.Utils.Utils;
+import java.io.File;
+import java.io.IOException;
+
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -10,13 +12,14 @@ import javafx.scene.control.Spinner;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
-import javafx.stage.FileChooser.ExtensionFilter;
 import javafx.stage.Stage;
+import javafx.stage.FileChooser.ExtensionFilter;
+import hu.mavenprojekt.Utils.Utils;
 import org.tinylog.Logger;
-import java.io.File;
 
-
-
+/**
+ * MainMenu class, represents the games main menu.
+ */
 public final class MainMenu implements GUI {
     private Scene scene = null;
     private VBox root = null;
@@ -24,11 +27,19 @@ public final class MainMenu implements GUI {
     private HBox sizeBox = null;
     private GameGUI gameGUI = null;
 
+    /**
+     * Constructor for the main menu.
+     *
+     * @param stage_ the stage the game is running on
+     */
     public MainMenu(Stage stage_) {
         construct();
         this.stage = stage_;
     }
 
+    /**
+     * construct method which contructs the layout of the main menu.
+     */
     public void construct() {
         this.root = new VBox();
         this.sizeBox = new HBox();
@@ -72,14 +83,18 @@ public final class MainMenu implements GUI {
             s.setTitle("Open file");
             FileChooser fileChooser = new FileChooser();
             fileChooser.getExtensionFilters().addAll(new ExtensionFilter("JSON Files", "*.json"));
-            fileChooser.setInitialDirectory(new File("./levels"));
+            File directory = new File("./levels");
+            if (!directory.exists()) {
+                directory = new File("../levels");
+                if (!directory.exists())
+                    directory = new File(".");
+            }
+            fileChooser.setInitialDirectory(directory);
             File file = fileChooser.showOpenDialog(s);
             if (file != null) {
                 this.gameGUI = Utils.setGame(this, file);
                 if (this.gameGUI != null)
                     this.stage.setScene(this.gameGUI.getRoot());
-                    Logger.info("Level successfully loaded from: " + file);
-
             }
 
         });
@@ -88,22 +103,40 @@ public final class MainMenu implements GUI {
 
     }
 
-
+    /**
+     * method that returns the main menu's root component so it can be used as a
+     * root for a scene.
+     *
+     * @return {@link VBox}, the root component of the main menu
+     */
     public VBox getRoot() {
         return this.root;
     }
 
-
+    /**
+     * method to set the scene variable, so it can be used to get back to the main
+     * menu from a game.
+     *
+     * @param scene the scene the main mau is on
+     */
     public void setScene(Scene scene) {
         this.scene = scene;
     }
 
-
+    /**
+     * a method that returns the scene the main menu is on.
+     *
+     * @return {@link Scene} the main menu is on
+     */
     public Scene getScene() {
         return this.scene;
     }
 
-
+    /**
+     * method that returns the game's stage, so it can be closed from other scenes.
+     *
+     * @return {@link Stage}, the game's window
+     */
     public Stage getStage() {
         return this.stage;
     }

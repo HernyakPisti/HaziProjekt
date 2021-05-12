@@ -1,22 +1,29 @@
 package hu.mavenprojekt.Components.Model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import hu.mavenprojekt.Components.Model.Boardelements.*;
-
 import java.util.Random;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import hu.mavenprojekt.Components.Model.Boardelements.Ground;
+import hu.mavenprojekt.Components.Model.Boardelements.Start;
+import hu.mavenprojekt.Components.Model.Boardelements.Target;
+import hu.mavenprojekt.Components.Model.Boardelements.Tile;
+import hu.mavenprojekt.Components.Model.Boardelements.Wall;
 
 public final class Board {
 
-
+    // #region attributes
 
     private int N = 10;
     private int M = 10;
-    @JsonIgnore
+    // @JsonIgnore
     private Tile[][] map;
     private Player player;
     private String mapString;
 
+    // #endregion
 
+    // #region getters/setters
 
     public int getN() {
         return this.N;
@@ -59,7 +66,9 @@ public final class Board {
         this.mapString = mapString_;
     }
 
+    // #endregion
 
+    // #region constructors
 
     public Board() {
         this.player = new Player(1, 1);
@@ -99,7 +108,9 @@ public final class Board {
         this.player = p;
     }
 
+    // #endregion
 
+    // #region methods
 
     public void generateDefault() {
         for (int i = 0; i < this.N; i++) {
@@ -119,6 +130,14 @@ public final class Board {
         int j;
         Random r = new Random();
 
+        for (int k = 0; k < (int) (this.N * this.M / 10); k++) {
+            i = r.nextInt(this.N - 2) + 1;
+            j = r.nextInt(this.M - 2) + 1;
+            if (this.map[i][j] instanceof Start)
+                k--;
+            else
+                this.map[i][j] = new Wall();
+        }
 
         do {
             i = r.nextInt(this.N);
@@ -160,8 +179,8 @@ public final class Board {
                             if (startcount > 1)
                                 return;
                             this.map[i][j] = new Start();
-                            this.player.setX(j);
-                            this.player.setY(i);
+                            this.player.setStartX(j);
+                            this.player.setStartY(i);
                             startcount++;
                             break;
                         case '$':
@@ -184,6 +203,6 @@ public final class Board {
         fromString(this.mapString);
     }
 
-
+    // #endregion
 
 }

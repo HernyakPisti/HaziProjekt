@@ -3,12 +3,14 @@ package hu.mavenprojekt.Components.View;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Spinner;
+import javafx.scene.image.Image;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
@@ -48,8 +50,8 @@ public final class MainMenu implements GUI {
 
         Label meretLabel = new Label("Pálya méret:");
 
-        Spinner<Integer> spinnerX = new Spinner<Integer>(10, 20, 10);
-        Spinner<Integer> spinnerY = new Spinner<Integer>(10, 20, 10);
+        Spinner<Integer> spinnerX = new Spinner<Integer>(10, 15, 10);
+        Spinner<Integer> spinnerY = new Spinner<Integer>(10, 15, 10);
         Label labelX = new Label("x");
         spinnerX.setMaxWidth(80);
         spinnerY.setMaxWidth(80);
@@ -97,9 +99,21 @@ public final class MainMenu implements GUI {
                     this.stage.setScene(this.gameGUI.getRoot());
             }
 
+
         });
 
-        this.root.getChildren().addAll(sizeBox, newGameButton, openFile, cancelButton);
+        Button openSampleMap = new Button("Open Sample Map");
+        openSampleMap.setOnAction(e -> {
+            Logger.info("Opened sample map");
+            URL file = getClass().getResource("/sample.json");
+            if (file != null) {
+                this.gameGUI = Utils.setGame(this, file);
+                if (this.gameGUI != null)
+                    this.stage.setScene(this.gameGUI.getRoot());
+            }
+        });
+
+        this.root.getChildren().addAll(sizeBox, newGameButton, openFile, openSampleMap, cancelButton);
 
     }
 

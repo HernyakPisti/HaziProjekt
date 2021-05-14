@@ -130,15 +130,6 @@ public final class Board {
         int j;
         Random r = new Random();
 
-        for (int k = 0; k < (int) (this.N * this.M / 10); k++) {
-            i = r.nextInt(this.N - 2) + 1;
-            j = r.nextInt(this.M - 2) + 1;
-            if (this.map[i][j] instanceof Start)
-                k--;
-            else
-                this.map[i][j] = new Wall();
-        }
-
         do {
             i = r.nextInt(this.N);
             j = r.nextInt(this.M);

@@ -47,10 +47,24 @@ class BoardTest {
 
     @Test
     void fromString() {
+        board2.fromString("######.O.##...##.$.######");
+        assertTrue(board2.getMapString().contains("$"));
+        board2.fromString("######.O.##...##..######");//N*M!=map.length
+        assertTrue(board2.getMapString().contains("$"));
+        board2.fromString("######.O.##...##...######");
+        assertFalse(board2.getMapString().contains("$"));
+        board2.fromString("######OOO##...##...######");
+        assertEquals("######OO.##...##...######",board2.getMapString());
+        board2.fromString("######$$$##...##...######");
+        assertEquals("######$$.##...##...######",board2.getMapString());
       }
 
     @Test
     void resetMap() {
+        board2.setMapString("........................O");
+        assertFalse(board2.getMapString().contains("$"));
+        board2.resetMap();
+        assertEquals("........................O",board2.getMapString());
     }
 
     @Test
@@ -93,7 +107,9 @@ class BoardTest {
 
     @Test
     void setMap() {
-
+        assertFalse(board2.getMap().equals(board.getMap()));
+        board2.setMap(board.getMap());
+        assertSame(board.getMap(),board2.getMap());
     }
 
     @Test
@@ -118,8 +134,10 @@ class BoardTest {
 
     @Test
     void setMapString() {
-        board.setMapString(".####.$.....####.##..");
-        assertFalse(board.getMapString().contains("O"));
+        board2.setMapString(".........................");
+        assertFalse(board2.getMapString().contains("O"));
+        board2.setMapString("........................O");
+        assertTrue(board2.getMapString().contains("O"));
     }
 
     @Test

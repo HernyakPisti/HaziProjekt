@@ -1,0 +1,50 @@
+2021-05-14 21:45:49 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$3()
+INFO: Opened sample map
+2021-05-14 21:45:56 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$3()
+INFO: Clicked on Restart
+2021-05-14 21:45:57 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$2()
+INFO: Clicked on New Game
+2021-05-14 21:45:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 2
+2021-05-14 21:45:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 3
+2021-05-14 21:45:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 4
+2021-05-14 21:45:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 5
+2021-05-14 21:45:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 6
+2021-05-14 21:45:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 7
+2021-05-14 21:45:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 8
+2021-05-14 21:45:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 9
+2021-05-14 21:45:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 10
+2021-05-14 21:45:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 11
+2021-05-14 21:45:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 10 12
+2021-05-14 21:46:00 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 9 12
+2021-05-14 21:46:00 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 8 12
+2021-05-14 21:46:00 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 7 12
+2021-05-14 21:46:00 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move()
+INFO: Game finished
+2021-05-14 21:46:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 3 11
+2021-05-14 21:46:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 3 10
+2021-05-14 21:46:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 4 10
+2021-05-14 21:46:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 5 10
+2021-05-14 21:46:05 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 6 10
+2021-05-14 21:46:05 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to: 7 10
+2021-05-14 21:46:05 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move()
+INFO: Game finished

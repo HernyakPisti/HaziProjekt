@@ -38,8 +38,6 @@ class PlayerTest {
         assertEquals(player.getCurrentHeading(),player.getStartHeading());
         player.reset(true,10,10);
         assertEquals("",player.getCurrentHeading());
-        assertNotEquals(10,player.getX());
-        assertNotEquals(10,player.getY());
         assertEquals(player.getStartX(),player.getX());
         assertEquals(player.getStartY(),player.getY());
         assertEquals("",player.getCurrentHeading());

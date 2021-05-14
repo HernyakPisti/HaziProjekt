@@ -64,6 +64,7 @@ public final class Board {
 
     public void setMapString(String mapString_) {
         this.mapString = mapString_;
+        fromString(mapString_);
     }
 
     // #endregion

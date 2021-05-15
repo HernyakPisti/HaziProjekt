@@ -5,7 +5,17 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * The class that is inherited from javafx {@link Application}.
+ */
 public final class App extends Application {
+
+    /**
+     * A {@link java.lang.reflect.Method} that starts the javafx
+     * {@link Application}.
+     *
+     * @param stage A {@link Stage}, the game's window.
+     */
     @Override
     public void start(final Stage stage) {
 
@@ -21,7 +31,12 @@ public final class App extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
+    /**
+     * The original main {@link java.lang.reflect.Method}.
+     *
+     * @param args The program's arguments.
+     */
+    public static void main(final String[] args) {
 
         launch();
 

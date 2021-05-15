@@ -1,5 +1,7 @@
 package hu.mavenprojekt.Components.View;
 
+import org.tinylog.Logger;
+
 import hu.mavenprojekt.Components.Controller.BoardController;
 import hu.mavenprojekt.Components.Controller.PlayerController;
 import hu.mavenprojekt.Components.Model.Board;
@@ -13,10 +15,13 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
+/**
+ * A {@link Class} that represents the GUI of the gamearea.
+ */
 public final class BoardGUI implements GUI {
+
     private BoardController boardController = null;
     private PlayerController playerController = null;
     private int screenWidth;
@@ -24,7 +29,13 @@ public final class BoardGUI implements GUI {
     private GridPane root;
     private GUI parent;
 
-    public BoardGUI(GUI p) {
+    /**
+     * {@link java.lang.reflect.Constructor} for {@link BoardGUI}.Defaults
+     * everything.
+     *
+     * @param p A {@link GUI} object, this object's parent.
+     */
+    public BoardGUI(final GUI p) {
         this.boardController = new BoardController(this, 10, 10);
         this.playerController = new PlayerController(this);
         this.screenWidth = 640;
@@ -33,29 +44,70 @@ public final class BoardGUI implements GUI {
         construct();
     }
 
-    public BoardGUI(GUI p, int screenWidth, int screenHeight, int N, int M) {
-        this.boardController = new BoardController(this, N, M);
-        this.playerController = new PlayerController(this);
-        this.screenWidth = screenWidth;
-        this.screenHeight = screenHeight;
-        this.parent = p;
-        construct();
+    /**
+     * {@link java.lang.reflect.Constructor} for {@link BoardGUI}. Creates a new
+     * {@link Board} and window with the given parameters.
+     *
+     * @param p             A {@link GUI} object, this object's parent.
+     * @param screenWidth_  An {@link Integer}, the game's window's width. Must be
+     *                      positive!
+     * @param screenHeight_ An {@link Integer}, the game's Window's height. Must be
+     *                      positive!
+     * @param N             An {@link Integer}, the game's {@link Board}'s N
+     *                      parameter (number of rows). Must be positive!
+     * @param M             An {@link Integer}, the game's {@link Board}'s M
+     *                      parameter (number of columns). Must be positive!
+     */
+    public BoardGUI(final GUI p, final int screenWidth_, final int screenHeight_, final int N, final int M) {
+        if (screenWidth_ > 0 && screenHeight_ > 0 && N > 0 && M > 0) {
+            this.boardController = new BoardController(this, N, M);
+            this.playerController = new PlayerController(this);
+            this.screenWidth = screenWidth_;
+            this.screenHeight = screenHeight_;
+            this.parent = p;
+            construct();
+        } else {
+            Logger.error("\"screenWidth\", \"screenHeight\", \"N\" and \"M\" must be greater than 0. Got screenWidth: "
+                    + screenWidth_ + ", screenHeight: " + screenHeight_ + ", N: " + N + ", M: " + M);
+        }
     }
 
-    public BoardGUI(GUI p, int screenWidth, int screenHeight, Board board) {
-        this.boardController = new BoardController(this, board);
-        this.playerController = new PlayerController(this);
-        this.screenWidth = screenWidth;
-        this.screenHeight = screenHeight;
-        this.parent = p;
-        construct();
+    /**
+     * {@link java.lang.reflect.Constructor} for {@link BoardGUI}. Uses an existing
+     * {@link Board} (loading in saved games), and creates a window with the given
+     * parameters.
+     *
+     * @param p             A {@link GUI} object, this object's parent.
+     * @param screenWidth_  An {@link Integer}, the game's window's width. Must be
+     *                      positive!
+     * @param screenHeight_ An {@link Integer}, the game's window's height. Must be
+     *                      positive!
+     * @param board_        The existing {@link Board}.
+     */
+    public BoardGUI(final GUI p, final int screenWidth_, final int screenHeight_, final Board board_) {
+        if (screenWidth_ > 0 && screenHeight_ > 0) {
+            this.boardController = new BoardController(this, board_);
+            this.playerController = new PlayerController(this);
+            this.screenWidth = screenWidth_;
+            this.screenHeight = screenHeight_;
+            this.parent = p;
+            construct();
+        } else {
+            Logger.error("\"screenWidth\" and \"screenHeight\" must be greater than 0. Got screenWidth: " + screenWidth_
+                    + ", screenHeight: " + screenHeight_);
+        }
     }
 
+    /**
+     * A {@link java.lang.reflect.Method} that is used to construct the GUI layout
+     * of the {@link Board}.
+     */
     public void construct() {
-        if (this.boardController.getBoard() == null)
+        if (this.boardController.getBoard() == null) {
             this.boardController.generateDefaultBoard();
-        else
+        } else {
             this.boardController.getBoard().resetMap();
+        }
 
         this.root = new GridPane();
         this.root.setPadding(new Insets(10));
@@ -64,6 +116,9 @@ public final class BoardGUI implements GUI {
 
     }
 
+    /**
+     * The {@link java.lang.reflect.Method} that is responsible for drawing th GUI.
+     */
     public void draw() {
         this.root.getChildren().clear();
         for (int i = 0; i < this.boardController.getBoard().getN(); i++) {
@@ -78,49 +133,22 @@ public final class BoardGUI implements GUI {
                 } else if (this.boardController.getBoard().getTileAt(i, j) instanceof Ground) {
                     t.setFill(Color.web("#F4F4F4"));
                 } else if (this.boardController.getBoard().getTileAt(i, j) instanceof Start) {
-                    t.setFill(Color.web("#00FF00"));
+                    t.setFill(Color.web("#FF0000"));
                 } else if (this.boardController.getBoard().getTileAt(i, j) instanceof Target) {
-                    t.setFill(Color.web("#FFF000"));
+                    t.setFill(Color.web("#FF0000"));
                 }
 
                 t.setStrokeWidth(1);
                 stackPane.getChildren().add(t);
                 Player p = this.boardController.getBoard().getPlayer();
                 if (i == p.getY() && j == p.getX()) {
-                    Circle c = new Circle(
-                            (double) this.screenWidth / (2 * this.boardController.getBoard().getN()),
+                    Circle c = new Circle((double) this.screenWidth / (2 * this.boardController.getBoard().getN()),
                             (double) this.screenHeight / (2 * this.boardController.getBoard().getM()),
                             (double) this.screenWidth / (2 * this.boardController.getBoard().getM()) - 10);
                     c.setFill(Color.web("#0000FF"));
                     c.setStroke(Color.web("#000000"));
                     c.setStrokeWidth(1);
                     stackPane.getChildren().add(c);
-                    Line l = new Line();
-                    l.setStartX(c.getCenterX());
-                    l.setStartY(c.getCenterY());
-                    switch (p.getCurrentHeading()) {
-                        case "a":
-                            l.setEndX(c.getCenterX() + c.getRadius());
-                            l.setEndY(c.getCenterY());
-                            break;
-                        case "s":
-                            l.setEndX(c.getCenterX());
-                            l.setEndY(c.getCenterY() + c.getRadius());
-                            break;
-                        case "d":
-                            l.setEndX(c.getCenterX() - c.getRadius());
-                            l.setEndY(c.getCenterY());
-                            break;
-                        case "w":
-                            l.setEndX(c.getCenterX());
-                            l.setEndY(c.getCenterY() - c.getRadius());
-                            break;
-                        default:
-                            l.setEndX(l.getStartX());
-                            l.setEndY(l.getStartY());
-                            break;
-                    }
-                    stackPane.getChildren().add(l);
 
                 }
                 this.root.add(stackPane, j, i);
@@ -128,6 +156,10 @@ public final class BoardGUI implements GUI {
         }
     }
 
+    /**
+     * The {@link java.lang.reflect.Method} that is responsible for printing put the
+     * game to the console.
+     */
     public void drawConsole() {
         String str = "";
         for (int i = 0; i < this.boardController.getBoard().getN(); i++) {
@@ -145,14 +177,34 @@ public final class BoardGUI implements GUI {
         System.out.println(str);
     }
 
+    /**
+     * The {@link java.lang.reflect.Method} that returns the current {@link Board}'s
+     * controller.
+     *
+     * @return A {@link BoardController}, the current game's
+     *         {@link BoardController}.
+     */
     public BoardController getBoardController() {
         return this.boardController;
     }
 
+    /**
+     * The {@link java.lang.reflect.Method} that returns the current
+     * {@link Player}'s controller.
+     *
+     * @return A {@link PlayerController}, the current game's
+     *         {@link PlayerController}.
+     */
     public PlayerController getPlayerController() {
         return this.playerController;
     }
 
+    /**
+     * The {@link java.lang.reflect.Method} that returns this GUI elements root
+     * element, so it can be used as a root for a {@link javafx.scene.Scene}.
+     *
+     * @return A {@link GridPane}, this GUI element's root.
+     */
     public GridPane getRoot() {
         return this.root;
     }

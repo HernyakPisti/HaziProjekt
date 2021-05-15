@@ -48,3 +48,87 @@ INFO: Moved to: 6 10
 INFO: Moved to: 7 10
 2021-05-14 21:46:05 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move()
 INFO: Game finished
+2021-05-15 10:19:41 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 10:20:46 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 10:25:48 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$0()
+INFO: Clicked on New Game
+2021-05-15 10:25:49 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 10:25:49 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 3
+2021-05-15 10:25:51 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$2()
+INFO: Clicked on New Game
+2021-05-15 10:25:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 4
+2021-05-15 10:25:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 5
+2021-05-15 10:25:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 5, Y: 5
+2021-05-15 10:25:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 5, Y: 5
+2021-05-15 10:25:53 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 6
+2021-05-15 10:25:53 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 6
+2021-05-15 10:25:53 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 6
+2021-05-15 10:25:53 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 10:25:53 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 10:25:53 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 10:25:54 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 4
+2021-05-15 10:26:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 10:26:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 10:26:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-15 10:26:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 2
+2021-05-15 10:26:05 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$3()
+INFO: Clicked on Restart
+2021-05-15 10:26:08 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$0()
+INFO: Clicked on Main Menu
+2021-05-15 10:26:09 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$2()
+INFO: Opened sample map
+2021-05-15 10:26:09 [JavaFX Application Thread] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 100. Got: 196
+2021-05-15 10:26:15 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 10:26:15 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 10:26:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 10:26:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 10:26:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 10:26:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 8
+2021-05-15 10:26:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 8
+2021-05-15 10:26:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 7
+2021-05-15 10:26:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 10:26:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 7
+2021-05-15 10:26:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 7
+2021-05-15 10:26:18 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 7
+2021-05-15 10:26:18 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 8
+2021-05-15 10:26:18 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 6, Y: 9
+2021-05-15 10:26:20 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$1()
+INFO: Clicked on Cancel. Clsoing the game.
+2021-05-15 10:26:49 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 10:28:16 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24

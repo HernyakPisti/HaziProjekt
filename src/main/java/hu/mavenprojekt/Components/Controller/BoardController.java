@@ -108,17 +108,21 @@ public final class BoardController {
      *         returning to {@link hu.mavenprojekt.Components.View.MainMenu} or
      *         close the game.
      */
-    public String move(final KeyEvent e) {
 
+    public String move(final KeyEvent e) {
+        return move2(e.getCode());
+    }
+
+    public String move2(final KeyCode e) {
         String h = null;
         String c = "";
-        if (e.getCode() == KeyCode.A) {
+        if (e == KeyCode.A) {
             c = "a";
-        } else if (e.getCode() == KeyCode.S) {
+        } else if (e == KeyCode.S) {
             c = "s";
-        } else if (e.getCode() == KeyCode.D) {
+        } else if (e == KeyCode.D) {
             c = "d";
-        } else if (e.getCode() == KeyCode.W) {
+        } else if (e == KeyCode.W) {
             c = "w";
         }
 

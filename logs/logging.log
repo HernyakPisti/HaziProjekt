@@ -132,3 +132,765 @@ INFO: Clicked on Cancel. Clsoing the game.
 ERROR: The map lenght must be equals to 25. Got: 24
 2021-05-15 10:28:16 [main] hu.mavenprojekt.Components.Model.Board.fromString()
 ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 10:43:29 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 10:46:54 [main] hu.mavenprojekt.Components.Model.Player.<init>()
+ERROR: "x" and "y" must be greater or equals to 0. Got x: -11, y: -11
+2021-05-15 10:53:24 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 11:08:37 [main] hu.mavenprojekt.Components.Model.Player.<init>()
+ERROR: "x" and "y" must be greater or equals to 0. Got x: -10, y: -10
+2021-05-15 12:12:16 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 21:28:22 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$2()
+INFO: Opened sample map
+2021-05-15 21:28:23 [JavaFX Application Thread] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 100. Got: 196
+2021-05-15 21:28:28 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 21:28:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 21:28:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 21:28:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 21:28:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 21:28:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 8
+2021-05-15 21:28:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 8
+2021-05-15 21:28:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 7
+2021-05-15 21:28:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 21:28:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 7
+2021-05-15 21:28:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 7
+2021-05-15 21:28:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 7
+2021-05-15 21:28:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 7, Y: 7
+2021-05-15 21:28:32 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 7, Y: 7
+2021-05-15 21:28:33 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 8
+2021-05-15 21:28:33 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 8
+2021-05-15 21:28:33 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 7
+2021-05-15 21:28:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 6
+2021-05-15 21:28:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 6
+2021-05-15 21:28:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 7
+2021-05-15 21:28:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 7
+2021-05-15 21:28:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 7
+2021-05-15 21:28:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 21:28:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 21:28:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 21:28:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 21:28:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 21:28:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 21:28:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-15 21:28:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 2
+2021-05-15 21:28:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 2
+2021-05-15 21:28:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 2
+2021-05-15 21:28:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 3
+2021-05-15 21:28:37 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 4
+2021-05-15 21:28:37 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 5
+2021-05-15 21:28:37 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 5
+2021-05-15 21:28:37 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 4
+2021-05-15 21:28:37 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 4
+2021-05-15 21:28:37 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 4
+2021-05-15 21:28:37 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 4
+2021-05-15 21:28:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 5
+2021-05-15 21:28:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 6
+2021-05-15 21:28:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 7
+2021-05-15 21:28:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 8
+2021-05-15 21:28:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 8
+2021-05-15 21:28:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 7
+2021-05-15 21:28:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 7
+2021-05-15 21:28:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 8
+2021-05-15 21:28:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 8
+2021-05-15 21:28:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 8
+2021-05-15 21:28:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 8
+2021-05-15 21:28:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 7
+2021-05-15 21:28:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 6
+2021-05-15 21:28:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 5
+2021-05-15 21:28:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 5
+2021-05-15 21:28:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 5
+2021-05-15 21:28:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 5
+2021-05-15 21:28:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 6
+2021-05-15 21:28:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 10, Y: 6
+2021-05-15 21:28:41 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 7
+2021-05-15 21:28:41 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 8
+2021-05-15 21:28:41 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 8
+2021-05-15 21:28:41 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 8
+2021-05-15 21:28:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 8
+2021-05-15 21:28:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 7
+2021-05-15 21:28:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 6
+2021-05-15 21:28:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 5
+2021-05-15 21:28:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 5
+2021-05-15 21:28:43 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 5
+2021-05-15 21:28:43 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 5
+2021-05-15 21:28:43 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 5
+2021-05-15 21:28:43 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 6
+2021-05-15 21:28:43 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 6
+2021-05-15 21:28:43 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 5
+2021-05-15 21:28:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 4
+2021-05-15 21:28:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 3
+2021-05-15 21:28:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 2
+2021-05-15 21:28:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 2
+2021-05-15 21:28:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 2
+2021-05-15 21:28:45 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 2
+2021-05-15 21:28:45 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 3
+2021-05-15 21:28:45 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 4
+2021-05-15 21:28:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 4
+2021-05-15 21:28:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 3
+2021-05-15 21:28:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 3
+2021-05-15 21:28:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 3
+2021-05-15 21:28:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 4
+2021-05-15 21:28:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 5
+2021-05-15 21:28:47 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 6
+2021-05-15 21:28:47 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 7
+2021-05-15 21:28:47 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 8
+2021-05-15 21:28:47 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 8
+2021-05-15 21:28:47 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 8
+2021-05-15 21:28:48 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 8
+2021-05-15 21:28:48 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 8
+2021-05-15 21:28:48 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 7
+2021-05-15 21:28:49 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 6
+2021-05-15 21:28:49 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 6
+2021-05-15 21:28:49 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 6
+2021-05-15 21:28:49 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 7
+2021-05-15 21:28:49 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 8
+2021-05-15 21:28:50 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 9
+2021-05-15 21:28:50 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 10
+2021-05-15 21:28:50 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 10
+2021-05-15 21:28:50 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 9
+2021-05-15 21:28:51 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 9
+2021-05-15 21:28:51 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 9
+2021-05-15 21:28:51 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 10
+2021-05-15 21:28:51 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 11
+2021-05-15 21:28:51 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 12
+2021-05-15 21:28:51 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 13
+2021-05-15 21:28:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 13
+2021-05-15 21:28:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 12
+2021-05-15 21:28:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 12
+2021-05-15 21:28:52 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 12
+2021-05-15 21:28:53 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 14, Y: 12
+2021-05-15 21:28:54 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$3()
+INFO: Clicked on Restart
+2021-05-15 21:28:56 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$2()
+INFO: Clicked on New Game
+2021-05-15 21:28:56 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 6
+2021-05-15 21:28:57 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 6
+2021-05-15 21:28:57 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 6
+2021-05-15 21:28:57 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 8, Y: 5
+2021-05-15 21:28:57 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 7
+2021-05-15 21:28:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 7
+2021-05-15 21:28:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 6
+2021-05-15 21:28:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 5
+2021-05-15 21:28:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 5
+2021-05-15 21:28:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 5
+2021-05-15 21:28:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 5
+2021-05-15 21:28:58 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 5
+2021-05-15 21:28:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 5
+2021-05-15 21:28:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 13, Y: 5
+2021-05-15 21:28:59 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 21:29:01 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 21:29:01 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 21:29:01 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-15 21:29:01 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 2
+2021-05-15 21:29:02 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 6, Y: 2
+2021-05-15 21:29:02 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 7, Y: 2
+2021-05-15 21:29:02 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 2
+2021-05-15 21:29:02 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 3
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 4
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 5
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 6
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 7
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 8
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 9
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 10
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 11
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 12
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 13
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 8, Y: 14
+2021-05-15 21:29:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 21:29:05 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Back to main menu
+2021-05-15 21:29:07 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$1()
+INFO: Clicked on Exit. Closing the game.
+2021-05-15 21:32:11 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:32:33 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:33:11 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:33:11 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:34:11 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:34:11 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:34:11 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 3
+2021-05-15 21:34:40 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:34:40 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:34:40 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 3
+2021-05-15 21:34:40 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 2
+2021-05-15 21:34:50 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:34:50 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:34:50 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 3
+2021-05-15 21:34:50 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 2
+2021-05-15 21:35:39 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:35:39 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:35:39 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 21:35:39 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 21:36:28 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:36:28 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:36:28 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 21:36:28 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 21:36:28 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 21:40:03 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:40:03 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:40:03 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 21:40:03 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 21:40:03 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 100. Got: 25
+2021-05-15 21:40:03 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 21:40:54 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:40:54 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:40:54 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 21:40:54 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 21:40:54 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 100. Got: 25
+2021-05-15 21:40:54 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 21:41:44 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 21:41:44 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 21:41:44 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 21:41:44 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 21:55:27 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 100. Got: 25
+2021-05-15 22:00:21 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 22:00:21 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:00:21 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:00:21 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 1
+2021-05-15 22:00:21 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 22:15:45 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 22:15:45 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:15:45 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:15:45 [main] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 1
+2021-05-15 22:15:45 [main] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:15:46 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 22:18:32 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$0()
+INFO: Clicked on New Game
+2021-05-15 22:18:34 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$0()
+INFO: Clicked on Main Menu
+2021-05-15 22:18:37 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$3()
+INFO: Opened recent sace
+2021-05-15 22:18:40 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$3()
+INFO: Opened recent sace
+2021-05-15 22:18:48 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$4()
+INFO: Clicked on Open level
+2021-05-15 22:18:48 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$3()
+INFO: Opened recent sace
+2021-05-15 22:20:24 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$2()
+INFO: Opened sample map
+2021-05-15 22:20:25 [JavaFX Application Thread] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 100. Got: 196
+2021-05-15 22:20:26 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:20:26 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 22:20:27 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 22:20:29 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$2()
+INFO: Clicked on New Game
+2021-05-15 22:20:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 2
+2021-05-15 22:20:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 12, Y: 3
+2021-05-15 22:20:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 11, Y: 3
+2021-05-15 22:20:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 10, Y: 3
+2021-05-15 22:20:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 3
+2021-05-15 22:20:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 2
+2021-05-15 22:20:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 9, Y: 1
+2021-05-15 22:20:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:20:33 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Back to main menu
+2021-05-15 22:20:40 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$3()
+INFO: Clicked on Open level
+2021-05-15 22:22:02 [JavaFX Application Thread] hu.mavenprojekt.Components.View.MainMenu.lambda$construct$0()
+INFO: Clicked on New Game
+2021-05-15 22:22:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 22:22:03 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 22:22:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 22:22:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 22:22:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 8
+2021-05-15 22:22:04 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:05 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:06 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-15 22:22:06 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:06 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:06 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 5
+2021-05-15 22:22:06 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 6
+2021-05-15 22:22:07 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 7
+2021-05-15 22:22:07 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 8
+2021-05-15 22:22:07 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 1, Y: 8
+2021-05-15 22:22:07 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:08 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:08 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:09 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 22:22:09 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 22:22:09 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 22:22:09 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 22:22:09 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 8
+2021-05-15 22:22:09 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:10 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:11 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 7
+2021-05-15 22:22:11 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 22:22:11 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 22:22:12 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 22:22:12 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:12 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:13 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:13 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:13 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 5
+2021-05-15 22:22:13 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 6
+2021-05-15 22:22:13 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 1, Y: 6
+2021-05-15 22:22:13 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:14 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:14 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 8
+2021-05-15 22:22:15 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 8
+2021-05-15 22:22:15 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 8
+2021-05-15 22:22:15 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 7
+2021-05-15 22:22:15 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 6
+2021-05-15 22:22:15 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 5
+2021-05-15 22:22:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-15 22:22:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:16 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 1, Y: 3
+2021-05-15 22:22:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:17 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:22 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$2()
+INFO: Clicked on New Game
+2021-05-15 22:22:22 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 7
+2021-05-15 22:22:22 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 8
+2021-05-15 22:22:23 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 22:22:23 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 22:22:23 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 6
+2021-05-15 22:22:24 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 7
+2021-05-15 22:22:24 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 8
+2021-05-15 22:22:24 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:25 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:26 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 5
+2021-05-15 22:22:26 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 22:22:26 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 5
+2021-05-15 22:22:26 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 1, Y: 5
+2021-05-15 22:22:26 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:27 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:27 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 9
+2021-05-15 22:22:28 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 8
+2021-05-15 22:22:28 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 7
+2021-05-15 22:22:28 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 6
+2021-05-15 22:22:28 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 5
+2021-05-15 22:22:28 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 22:22:28 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-15 22:22:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 3
+2021-05-15 22:22:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 1, Y: 3
+2021-05-15 22:22:29 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:30 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 4
+2021-05-15 22:22:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 22:22:31 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:32 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:32 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:32 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:33 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 22:22:33 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:33 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 3
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:34 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-15 22:22:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:35 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-15 22:22:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-15 22:22:36 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-15 22:22:37 [JavaFX Application Thread] hu.mavenprojekt.Components.View.GameGUI.lambda$construct$2()
+INFO: Clicked on New Game
+2021-05-15 22:22:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 5
+2021-05-15 22:22:38 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 6
+2021-05-15 22:22:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 7
+2021-05-15 22:22:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:39 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 5
+2021-05-15 22:22:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 6
+2021-05-15 22:22:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 1, Y: 6
+2021-05-15 22:22:40 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:41 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 4
+2021-05-15 22:22:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 5
+2021-05-15 22:22:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 6
+2021-05-15 22:22:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 7
+2021-05-15 22:22:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 8
+2021-05-15 22:22:42 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:43 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 3
+2021-05-15 22:22:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 4
+2021-05-15 22:22:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 4
+2021-05-15 22:22:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: Game finished
+2021-05-15 22:22:44 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.BoardController.move2()
+INFO: New game started
+2021-05-15 22:22:45 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-15 22:22:45 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 1
+2021-05-15 22:22:45 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 3
+2021-05-15 22:22:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-15 22:22:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 3
+2021-05-15 22:22:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-15 22:22:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-15 22:22:46 [JavaFX Application Thread] hu.mavenprojekt.Components.Controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2

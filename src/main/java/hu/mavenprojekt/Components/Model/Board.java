@@ -17,18 +17,12 @@ import hu.mavenprojekt.Components.Model.Boardelements.Wall;
  */
 public final class Board {
 
-    // #region attributes
-
     private int N = 10;
     private int M = 10;
     @JsonIgnore
     private Tile[][] map;
     private Player player;
     private String mapString;
-
-    // #endregion
-
-    // #region getters/setters
 
     /**
      * Returns the number of the {@link Board}'s rows.
@@ -139,9 +133,6 @@ public final class Board {
         fromString(this.mapString);
     }
 
-    // #endregion
-
-    // #region constructors
 
     /**
      * Default {@link java.lang.reflect.Constructor} for the {@link Board}.
@@ -235,10 +226,6 @@ public final class Board {
         }
     }
 
-    // #endregion
-
-    // #region methods
-
     /**
      * A {@link java.lang.reflect.Method} that generates a random {@link Tile} map
      * for the {@link Board}, depending on the dimensions.
@@ -261,15 +248,6 @@ public final class Board {
         int j;
         Random r = new Random();
 
-        for (int k = 0; k < (int) (this.N * this.M / 10); k++) {
-            i = r.nextInt(this.N - 2) + 1;
-            j = r.nextInt(this.M - 2) + 1;
-            if (this.map[i][j] instanceof Start) {
-                k--;
-            } else {
-                this.map[i][j] = new Wall();
-            }
-        }
 
         do {
             i = r.nextInt(this.N);
@@ -363,7 +341,5 @@ public final class Board {
         this.map = new Tile[this.N][this.M];
         fromString(this.mapString);
     }
-
-    // #endregion
 
 }

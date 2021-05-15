@@ -1,4 +1,3 @@
-
 package hu.mavenprojekt.Components.View;
 
 import javafx.geometry.Pos;
@@ -48,10 +47,10 @@ public final class MainMenu implements GUI {
         sizeBox.setAlignment(Pos.CENTER);
         sizeBox.setSpacing(10);
 
-        Label meretLabel = new Label("Pálya méret:");
+        Label meretLabel = new Label("Level size:");
 
-        Spinner<Integer> spinnerX = new Spinner<Integer>(10, 20, 10);
-        Spinner<Integer> spinnerY = new Spinner<Integer>(10, 20, 10);
+        Spinner<Integer> spinnerX = new Spinner<Integer>(5, 15, 10);
+        Spinner<Integer> spinnerY = new Spinner<Integer>(5, 15, 10);
         Label labelX = new Label("x");
         spinnerX.setMaxWidth(80);
         spinnerY.setMaxWidth(80);
@@ -89,6 +88,7 @@ public final class MainMenu implements GUI {
                 }
             }
         });
+
 
         Button openFile = new Button("Open level");
         openFile.setOnAction(e -> {

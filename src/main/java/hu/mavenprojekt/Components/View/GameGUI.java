@@ -25,9 +25,9 @@ public final class GameGUI implements GUI {
     private Stage stage = null;
     private HBox base = null;
     private BoardGUI boardGUI = null;
-    private int screenWidth;
-    private int screenHeight;
-    private GUI parent;
+    private final int screenWidth;
+    private final int screenHeight;
+    private final GUI parent;
     private VBox boardPane;
     private Image arrow = null;
     private ImageView imageView = null;
@@ -61,6 +61,9 @@ public final class GameGUI implements GUI {
         } else {
             Logger.error("\"screenWidth\", \"screenHeight\", \"N\" and \"M\" must be greater than 0. Got screenWidth: "
                     + screenWidth_ + ", screenHeight: " + screenHeight_ + ", N: " + N + ", M: " + M);
+            throw new IllegalArgumentException(
+                    "\"screenWidth\", \"screenHeight\", \"N\" and \"M\" must be greater than 0. Got screenWidth: "
+                            + screenWidth_ + ", screenHeight: " + screenHeight_ + ", N: " + N + ", M: " + M);
         }
 
     }
@@ -95,10 +98,10 @@ public final class GameGUI implements GUI {
             this.stage.setScene(((MainMenu) parent).getScene());
         });
 
-        Button cancelButton = new Button("Cancel");
+        Button cancelButton = new Button("Exit");
         cancelButton.setCancelButton(true);
         cancelButton.setOnAction(e -> {
-            Logger.info("Clicked on Cancel. Clsoing the game.");
+            Logger.info("Clicked on Exit. Clsoing the game.");
             this.stage.close();
         });
 
@@ -106,12 +109,14 @@ public final class GameGUI implements GUI {
         newGameButton.setOnAction(e -> {
             Logger.info("Clicked on New Game");
             this.boardGUI.getBoardController().reset(true);
+            rotateArrow(this.boardGUI.getBoardController().getBoard().getPlayer().getStartHeading());
         });
 
         Button restartButton = new Button("Restart");
         restartButton.setOnAction(e -> {
             Logger.info("Clicked on Restart");
             this.boardGUI.getBoardController().reset();
+            rotateArrow(this.boardGUI.getBoardController().getBoard().getPlayer().getStartHeading());
         });
 
         Button saveButton = new Button("Save Game");

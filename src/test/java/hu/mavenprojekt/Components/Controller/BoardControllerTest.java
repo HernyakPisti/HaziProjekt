@@ -5,6 +5,7 @@ import hu.mavenprojekt.Components.Model.Player;
 import hu.mavenprojekt.Components.View.BoardGUI;
 import hu.mavenprojekt.Components.View.GUI;
 import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -55,15 +56,30 @@ class BoardControllerTest {
     }
 
     @Test
-    void move2() {
+    void move() {
+        KeyEvent k1 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.D.toString(), KeyCode.D.toString(), KeyCode.D, false,
+                false, false, false);
+        KeyEvent k2 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.S.toString(), KeyCode.S.toString(), KeyCode.S, false,
+                false, false, false);
+        KeyEvent k3 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.A.toString(), KeyCode.A.toString(), KeyCode.A, false,
+                false, false, false);
+        KeyEvent k4 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.W.toString(), KeyCode.W.toString(), KeyCode.W, false,
+                false, false, false);
+        KeyEvent k5 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.Q.toString(), KeyCode.Q.toString(), KeyCode.Q, false,
+                false, false, false);
         boardController.generateDefaultBoard();
-        assertEquals(null, boardController.move2(KeyCode.A));
-        boardController.generateDefaultBoard();
-        assertEquals("s", boardController.move2(KeyCode.S));
-        boardController.generateDefaultBoard();
-        assertEquals("d", boardController.move2(KeyCode.D));
-        boardController.generateDefaultBoard();
-        assertEquals(null, boardController.move2(KeyCode.W));
+        boardController.getBoard().setM(5);
+        boardController.getBoard().setN(5);
+        boardController.getBoard().setMapString("######O..##...##.$.######");
+        boardController.getBoard().resetMap();
+        assertEquals("d", boardController.move(k1));
+        assertEquals("s", boardController.move(k2));
+        assertEquals("a", boardController.move(k3));
+        assertEquals("w", boardController.move(k4));
+        assertNull(boardController.move(k3));
+        assertEquals("d", boardController.move(k1));
+        assertEquals("d", boardController.move(k1));
+        assertNull(boardController.move(k5));
     }
 
     @Test
@@ -79,6 +95,9 @@ class BoardControllerTest {
         board.generateDefault();
         boardController.reset();
         assertEquals(board.getMapString(), boardController.getBoard().getMapString());
+        String before = boardController.getBoard().getMapString();
+        boardController.reset(true);
+        assertNotEquals(before, boardController.getBoard().getMapString());
     }
 
     @Test

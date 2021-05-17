@@ -23,10 +23,10 @@ public final class BoardGUI implements GUI {
 
     private BoardController boardController = null;
     private PlayerController playerController = null;
-    private int screenWidth;
-    private int screenHeight;
+    private final int screenWidth;
+    private final int screenHeight;
     private GridPane root;
-    private GUI parent;
+    private final GUI parent;
 
     /**
      * {@link java.lang.reflect.Constructor} for {@link BoardGUI}.Defaults
@@ -68,6 +68,9 @@ public final class BoardGUI implements GUI {
         } else {
             Logger.error("\"screenWidth\", \"screenHeight\", \"N\" and \"M\" must be greater than 0. Got screenWidth: "
                     + screenWidth_ + ", screenHeight: " + screenHeight_ + ", N: " + N + ", M: " + M);
+            throw new IllegalArgumentException(
+                    "\"screenWidth\", \"screenHeight\", \"N\" and \"M\" must be greater than 0. Got screenWidth: "
+                            + screenWidth_ + ", screenHeight: " + screenHeight_ + ", N: " + N + ", M: " + M);
         }
     }
 
@@ -93,6 +96,8 @@ public final class BoardGUI implements GUI {
             construct();
         } else {
             Logger.error("\"screenWidth\" and \"screenHeight\" must be greater than 0. Got screenWidth: " + screenWidth_
+                    + ", screenHeight: " + screenHeight_);
+            throw new IllegalArgumentException("\"screenWidth\" and \"screenHeight\" must be greater than 0. Got screenWidth: " + screenWidth_
                     + ", screenHeight: " + screenHeight_);
         }
     }

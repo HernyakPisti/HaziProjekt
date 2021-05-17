@@ -12,7 +12,6 @@ class BoardTest {
     Board board, board1, board2, board3, board4, board5;
     Player player, player2;
 
-
     @BeforeEach
     void init() {
         player = new Player(1, 1);
@@ -23,6 +22,31 @@ class BoardTest {
         board3 = new Board(10, 10);
         board4 = new Board(5, 5, player);
         board5 = new Board(player);
+    }
+
+    @Test
+    void constructors() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Board(0);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Board(-1, player);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Board(10, 0);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Board(-1, -1);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Board(-1, 1, player);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Board(-1, -1, player);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Board(1, -1, player);
+        });
     }
 
     @Test
@@ -49,22 +73,31 @@ class BoardTest {
     void fromString() {
         board2.fromString("######.O.##...##.$.######");
         assertTrue(board2.getMapString().contains("$"));
-        board2.fromString("######.O.##...##..######");//N*M!=map.length
-        assertTrue(board2.getMapString().contains("$"));
-        board2.fromString("######.O.##...##...######");
-        assertFalse(board2.getMapString().contains("$"));
-        board2.fromString("######OOO##...##...######");
-        assertEquals("######OO.##...##...######", board2.getMapString());
-        board2.fromString("######$$$##...##...######");
-        assertEquals("######$$.##...##...######", board2.getMapString());
+        assertThrows(IllegalArgumentException.class, () -> {
+            board2.fromString("######.O.##...##..##$###");// N*M!=map.length
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            board2.fromString("######OOO##...##...######");
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            board2.fromString("######$$$##...##...######");
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            board2.fromString("######..O##...##...######");
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            board2.fromString("######..$##...##...######");
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            board2.fromString("######.O.##...##.]##$####");
+        });
     }
 
     @Test
     void resetMap() {
-        board2.setMapString("........................O");
-        assertFalse(board2.getMapString().contains("$"));
+        board2.setMapString("..$.....................O");
         board2.resetMap();
-        assertEquals("........................O", board2.getMapString());
+        assertEquals("..$.....................O", board2.toString());
     }
 
     @Test
@@ -81,6 +114,9 @@ class BoardTest {
     void setN() {
         board.setN(4);
         assertEquals(4, board.getN());
+        assertThrows(IllegalArgumentException.class, () -> {
+            board.setN(-1);
+        });
     }
 
     @Test
@@ -97,6 +133,9 @@ class BoardTest {
     void setM() {
         board.setM(5);
         assertEquals(5, board.getM());
+        assertThrows(IllegalArgumentException.class, () -> {
+            board.setM(-1);
+        });
     }
 
     @Test
@@ -134,9 +173,11 @@ class BoardTest {
 
     @Test
     void setMapString() {
-        board2.setMapString(".........................");
-        assertFalse(board2.getMapString().contains("O"));
-        board2.setMapString("........................O");
+        board2.setMapString("...O..............$......");
+        board2.resetMap();
+        assertFalse(board2.getMapString().contains("#"));
+        board2.setMapString("....$...................O");
+        board2.resetMap();
         assertTrue(board2.getMapString().contains("O"));
     }
 

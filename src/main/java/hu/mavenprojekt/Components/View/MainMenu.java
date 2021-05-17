@@ -48,8 +48,8 @@ public final class MainMenu implements GUI {
 
         Label meretLabel = new Label("Level size:");
 
-        Spinner<Integer> spinnerX = new Spinner<Integer>(5, 15, 10);
-        Spinner<Integer> spinnerY = new Spinner<Integer>(5, 15, 10);
+        Spinner<Integer> spinnerX = new Spinner<Integer>(10, 15, 10);
+        Spinner<Integer> spinnerY = new Spinner<Integer>(10, 15, 10);
         Label labelX = new Label("x");
         spinnerX.setMaxWidth(80);
         spinnerY.setMaxWidth(80);
@@ -87,7 +87,6 @@ public final class MainMenu implements GUI {
                 }
             }
         });
-
 
         Button openFile = new Button("Open level");
         openFile.setOnAction(e -> {

@@ -106,34 +106,17 @@ public final class BoardController {
      * returning to {@link hu.mavenprojekt.Components.View.MainMenu} or
      * close the game.
      */
-
     public String move(final KeyEvent e) {
-        return move2(e.getCode());
-    }
 
-
-    /**
-     * A {@link java.lang.reflect.Method} used for handling the move inputs, in
-     * regards of the {@link Board}. It is responsible to redraw the board after
-     * move, and for checking if the player has won.
-     *
-     * @param e The {{@link KeyCode} is used for determine
-     *          the direction the player wants to move.
-     * @return A {@link Character} that signals for the {@link BoardGUI} the result
-     * of the move input's handling. Can signal a direction, or a code for
-     * returning to {@link hu.mavenprojekt.Components.View.MainMenu} or
-     * close the game.
-     */
-    public String move2(final KeyCode e) {
         String h = null;
         String c = "";
-        if (e == KeyCode.A) {
+        if (e.getCode() == KeyCode.A) {
             c = "a";
-        } else if (e == KeyCode.S) {
+        } else if (e.getCode() == KeyCode.S) {
             c = "s";
-        } else if (e == KeyCode.D) {
+        } else if (e.getCode() == KeyCode.D) {
             c = "d";
-        } else if (e == KeyCode.W) {
+        } else if (e.getCode() == KeyCode.W) {
             c = "w";
         }
 

@@ -11,12 +11,14 @@ import java.util.Random;
  */
 public final class Board {
 
+
     private int N = 10;
     private int M = 10;
     @JsonIgnore
     private Tile[][] map;
     private Player player;
     private String mapString;
+
 
     /**
      * Default {@link java.lang.reflect.Constructor} for the {@link Board}.
@@ -50,6 +52,7 @@ public final class Board {
             this.map = new Tile[n][n];
         } else {
             Logger.error("\"n\" must be greater than 0. Got: " + n);
+            throw new IllegalArgumentException("\"n\" must be greater than 0. Got: " + n);
         }
     }
 
@@ -68,6 +71,7 @@ public final class Board {
             this.map = new Tile[n][n];
         } else {
             Logger.error("\"n\" must be greater than 0. Got: " + n);
+            throw new IllegalArgumentException("\"n\" must be greater than 0. Got: " + n);
         }
     }
 
@@ -87,6 +91,7 @@ public final class Board {
             this.map = new Tile[n][m];
         } else {
             Logger.error("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
+            throw new IllegalArgumentException("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
         }
     }
 
@@ -107,6 +112,7 @@ public final class Board {
             this.player = p;
         } else {
             Logger.error("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
+            throw new IllegalArgumentException("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
         }
     }
 
@@ -126,10 +132,11 @@ public final class Board {
      * @param n An {@link Integer}, the number of rows. Must be positive!
      */
     public void setN(final int n) {
-        if (N > 0) {
+        if (n > 0) {
             this.N = n;
         } else {
             Logger.error("\"n\" must be greater than 0. Got: " + n);
+            throw new IllegalArgumentException("\"n\" must be greater than 0. Got: " + n);
         }
     }
 
@@ -149,10 +156,11 @@ public final class Board {
      * @param m An {@link Integer}, the number of columns. Must be positive!
      */
     public void setM(final int m) {
-        if (M > 0) {
+        if (m > 0) {
             this.M = m;
         } else {
             Logger.error("\"m\" must be greater than 0. Got: " + m);
+            throw new IllegalArgumentException("\"m\" must be greater than 0. Got: " + m);
         }
     }
 
@@ -216,7 +224,6 @@ public final class Board {
      */
     public void setMapString(final String mapString_) {
         this.mapString = mapString_;
-        fromString(this.mapString);
     }
 
     /**
@@ -241,6 +248,15 @@ public final class Board {
         int j;
         Random r = new Random();
 
+       /* for (int k = 0; k < (int) (this.N * this.M / 10); k++) {
+            i = r.nextInt(this.N - 2) + 1;
+            j = r.nextInt(this.M - 2) + 1;
+            if (this.map[i][j] instanceof Start) {
+                k--;
+            } else {
+                this.map[i][j] = new Wall();
+            }
+        }*/
 
         do {
             i = r.nextInt(this.N);
@@ -301,7 +317,9 @@ public final class Board {
                             break;
                         case 'O':
                             if (startcount > 1) {
-                                return;
+                                Logger.error("Only one \"Start\" is allowed on a Board  Got: " + startcount);
+                                throw new IllegalArgumentException(
+                                        "Only one \"Start\" is allowed on a Board  Got: " + startcount);
                             }
                             this.map[i][j] = new Start();
                             this.player.setStartX(j);
@@ -310,19 +328,31 @@ public final class Board {
                             break;
                         case '$':
                             if (endcount > 1) {
-                                return;
+                                Logger.error("Only one \"Target\" is allowed on a Board  Got: " + endcount);
+                                throw new IllegalArgumentException(
+                                        "Only one \"Target\" is allowed on a Board  Got: " + endcount);
                             }
                             this.map[i][j] = new Target();
                             endcount++;
                             break;
                         default:
-                            break;
+                            Logger.error("Invalid character: " + map_.charAt(i * this.M + j));
+                            throw new IllegalArgumentException("Invalid character: " + map_.charAt(i * this.M + j));
                     }
                 }
+            }
+            if (startcount == 0 || endcount == 0) {
+                Logger.error("The map has to contain at least 1 \"Start\" and \"Target\" Tile! Got start: " + startcount
+                        + ", target: " + endcount);
+                throw new IllegalArgumentException(
+                        "The map has to contain at least 1 \"Start\" and \"Target\" Tile! Got start: " + startcount
+                                + ", target: " + endcount);
             }
 
         } else {
             Logger.error("The map lenght must be equals to " + (this.N * this.M) + ". Got: " + map_.length());
+            throw new IllegalArgumentException(
+                    "The map lenght must be equals to " + (this.N * this.M) + ". Got: " + map_.length());
         }
     }
 
@@ -334,5 +364,4 @@ public final class Board {
         this.map = new Tile[this.N][this.M];
         fromString(this.mapString);
     }
-
 }

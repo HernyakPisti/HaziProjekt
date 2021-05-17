@@ -52,6 +52,8 @@ public final class Player {
             this.startHeading = "";
         } else {
             Logger.error("\"x\" and \"y\" must be greater or equals to 0. Got x: " + x_ + ", y: " + y_);
+            throw new IllegalArgumentException(
+                    "\"x\" and \"y\" must be greater or equals to 0. Got x: " + x_ + ", y: " + y_);
         }
     }
 
@@ -66,7 +68,7 @@ public final class Player {
      *                        {@link Player} starting direction ("a","s","d","w").
      */
     public Player(final int x_, final int y_, final String currentHeading_) {
-        if (y_ >= 0 && y_ >= 0 && currentHeading_.trim().length() == 1) {
+        if (x_ >= 0 && y_ >= 0 && currentHeading_.trim().length() == 1) {
             this.x = x_;
             this.y = y_;
             this.startX = x_;
@@ -75,6 +77,9 @@ public final class Player {
             this.startHeading = currentHeading_.trim();
         } else {
             Logger.error(
+                    "\"x\" and \"y\" must be greater or equals to 0 and \"currentHeading\"s lenghts must be 1 character. Got x: "
+                            + x_ + ", y: " + y_ + ", lenght: " + currentHeading_.length());
+            throw new IllegalArgumentException(
                     "\"x\" and \"y\" must be greater or equals to 0 and \"currentHeading\"s lenghts must be 1 character. Got x: "
                             + x_ + ", y: " + y_ + ", lenght: " + currentHeading_.length());
         }
@@ -107,6 +112,7 @@ public final class Player {
             this.x = x_;
         } else {
             Logger.error("\"x\"  must be greater or equals to 0. Got: " + x_);
+            throw new IllegalArgumentException("\"x\"  must be greater or equals to 0. Got: " + x_);
         }
     }
 
@@ -132,6 +138,7 @@ public final class Player {
             this.y = y_;
         } else {
             Logger.error("\"y\" must be greater or equals to 0. Got: " + y_);
+            throw new IllegalArgumentException("\"y\" must be greater or equals to 0. Got: " + y_);
         }
     }
 
@@ -157,6 +164,7 @@ public final class Player {
             this.startX = startX_;
         } else {
             Logger.error("\"startX\" must be greater or equals to 0. Got: " + startX_);
+            throw new IllegalArgumentException("\"startX\" must be greater or equals to 0. Got: " + startX_);
         }
     }
 
@@ -181,7 +189,8 @@ public final class Player {
         if (startY_ >= 0) {
             this.startY = startY_;
         } else {
-            Logger.error(" \"startY\" must be greater or equals to 0. Got: " + startY_);
+            Logger.error("\"startY\" must be greater or equals to 0. Got: " + startY_);
+            throw new IllegalArgumentException(" \"startY\" must be greater or equals to 0. Got: " + startY_);
         }
     }
 
@@ -208,6 +217,8 @@ public final class Player {
             this.currentHeading = currentHeading_.trim();
         } else {
             Logger.error("\"currentHeading\"'s lenght must be 0 or 1. Got: " + currentHeading_.trim().length());
+            throw new IllegalArgumentException(
+                    "\"currentHeading\"'s lenght must be 0 or 1. Got: " + currentHeading_.trim().length());
         }
     }
 
@@ -233,6 +244,8 @@ public final class Player {
             this.startHeading = startHeading_;
         } else {
             Logger.error("\"startHeading\"'s lenght must be 0 or 1. Got: " + startHeading_.trim().length());
+            throw new IllegalArgumentException(
+                    "\"startHeading\"'s lenght must be 0 or 1. Got: " + startHeading_.trim().length());
         }
     }
 
@@ -293,6 +306,7 @@ public final class Player {
             }
         } else {
             Logger.error("\"N\" and \"M\" must be greater than 0. Got N: " + N + ", M: " + M);
+            throw new IllegalArgumentException("\"N\" and \"M\" must be greater than 0. Got N: " + N + ", M: " + M);
         }
     }
 

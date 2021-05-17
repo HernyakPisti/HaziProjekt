@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class PlayerTest {
 
@@ -14,6 +15,31 @@ class PlayerTest {
         player = new Player();
         player1 = new Player(10, 10);
         player2 = new Player(5, 5, "d");
+    }
+
+    @Test
+    void constructors() {
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Player(-1, 0);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Player(-1, -1);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Player(1, -1);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Player(1, 1, "str");
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Player(-1, 1, "s");
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Player(-1, -1, "s");
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            new Player(1, -1, "s");
+        });
     }
 
     @Test
@@ -40,6 +66,12 @@ class PlayerTest {
         assertEquals(player.getStartX(), player.getX());
         assertEquals(player.getStartY(), player.getY());
         assertEquals("", player.getCurrentHeading());
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.reset(true, 10, 0);
+        });
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.reset(true, 0, 0);
+        });
     }
 
     @Test
@@ -59,6 +91,9 @@ class PlayerTest {
     void setX() {
         player.setX(2);
         assertEquals(2, player.getX());
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.setX(-1);
+        });
     }
 
     @Test
@@ -71,6 +106,9 @@ class PlayerTest {
     void setY() {
         player.setY(2);
         assertEquals(2, player.getY());
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.setY(-1);
+        });
     }
 
     @Test
@@ -83,6 +121,9 @@ class PlayerTest {
     void setStartX() {
         player.setStartX(3);
         assertEquals(3, player.getStartX());
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.setStartX(-1);
+        });
     }
 
     @Test
@@ -95,6 +136,9 @@ class PlayerTest {
     void setStartY() {
         player.setStartY(3);
         assertEquals(3, player.getStartY());
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.setStartY(-1);
+        });
     }
 
     @Test
@@ -107,6 +151,9 @@ class PlayerTest {
     void setCurrentHeading() {
         player.setCurrentHeading("a");
         assertEquals("a", player.getCurrentHeading());
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.setCurrentHeading("str");
+        });
     }
 
     @Test
@@ -119,5 +166,8 @@ class PlayerTest {
     void setStartHeading() {
         player.setStartHeading("s");
         assertEquals("s", player.getStartHeading());
+        assertThrows(IllegalArgumentException.class, () -> {
+            player.setStartHeading("str");
+        });
     }
 }

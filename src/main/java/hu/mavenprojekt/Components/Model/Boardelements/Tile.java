@@ -11,5 +11,5 @@ public interface Tile {
      *
      * @return A {@link String} that represents the {@link Class}.
      */
-    public String toString();
+    String toString();
 }

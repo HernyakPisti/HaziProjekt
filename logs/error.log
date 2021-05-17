@@ -34,3 +34,17 @@ ERROR: The map lenght must be equals to 25. Got: 24
 ERROR: The map lenght must be equals to 25. Got: 24
 2021-05-15 22:20:25 [JavaFX Application Thread] hu.mavenprojekt.Components.Model.Board.fromString()
 ERROR: The map lenght must be equals to 100. Got: 196
+2021-05-15 22:37:00 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-15 22:37:25 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-17 16:10:43 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-17 16:18:46 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-17 17:40:50 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-17 17:49:34 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24
+2021-05-17 18:52:26 [main] hu.mavenprojekt.Components.Model.Board.fromString()
+ERROR: The map lenght must be equals to 25. Got: 24

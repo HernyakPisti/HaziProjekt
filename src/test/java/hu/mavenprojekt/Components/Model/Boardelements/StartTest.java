@@ -10,12 +10,12 @@ class StartTest {
     Start start;
 
     @BeforeEach
-    void init(){
-        start=new Start();
+    void init() {
+        start = new Start();
     }
 
     @Test
     void testToString() {
-        assertEquals("O",start.toString());
+        assertEquals("O", start.toString());
     }
 }

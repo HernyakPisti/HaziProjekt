@@ -1,21 +1,19 @@
 package hu.mavenprojekt.Utils;
 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import hu.mavenprojekt.Components.Model.Board;
+import hu.mavenprojekt.Components.View.GUI;
+import hu.mavenprojekt.Components.View.GameGUI;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import org.tinylog.Logger;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
-
-import com.fasterxml.jackson.core.JsonParseException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import hu.mavenprojekt.Components.Model.Board;
-import hu.mavenprojekt.Components.View.GameGUI;
-import hu.mavenprojekt.Components.View.GUI;
-
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import org.tinylog.Logger;
 
 /**
  * {@link Class} that contains {@link java.lang.reflect.Method}s that are

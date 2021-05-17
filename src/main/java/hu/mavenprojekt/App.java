@@ -11,6 +11,17 @@ import javafx.stage.Stage;
 public final class App extends Application {
 
     /**
+     * The original main {@link java.lang.reflect.Method}.
+     *
+     * @param args The program's arguments.
+     */
+    public static void main(final String[] args) {
+
+        launch();
+
+    }
+
+    /**
      * A {@link java.lang.reflect.Method} that starts the javafx
      * {@link Application}.
      *
@@ -29,16 +40,5 @@ public final class App extends Application {
         stage.setScene(scene);
         stage.setTitle("Game");
         stage.show();
-    }
-
-    /**
-     * The original main {@link java.lang.reflect.Method}.
-     *
-     * @param args The program's arguments.
-     */
-    public static void main(final String[] args) {
-
-        launch();
-
     }
 }

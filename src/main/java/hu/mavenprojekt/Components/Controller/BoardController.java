@@ -1,20 +1,18 @@
 package hu.mavenprojekt.Components.Controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import hu.mavenprojekt.Components.Model.Board;
+import hu.mavenprojekt.Components.Model.Boardelements.Target;
+import hu.mavenprojekt.Components.Model.Player;
+import hu.mavenprojekt.Components.View.BoardGUI;
 import hu.mavenprojekt.Components.View.GUI;
 import hu.mavenprojekt.Utils.Utils;
-
-import java.io.File;
-import java.io.IOException;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import hu.mavenprojekt.Components.Model.Board;
-import hu.mavenprojekt.Components.Model.Player;
-import hu.mavenprojekt.Components.Model.Boardelements.Target;
-import hu.mavenprojekt.Components.View.BoardGUI;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import org.tinylog.Logger;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * The {@link Class} that is responsible for controoling the game's
@@ -104,15 +102,28 @@ public final class BoardController {
      * @param e The {@link KeyEvent} that's {@link KeyCode} is used for determine
      *          the direction the player wants to move.
      * @return A {@link Character} that signals for the {@link BoardGUI} the result
-     *         of the move input's handling. Can signal a direction, or a code for
-     *         returning to {@link hu.mavenprojekt.Components.View.MainMenu} or
-     *         close the game.
+     * of the move input's handling. Can signal a direction, or a code for
+     * returning to {@link hu.mavenprojekt.Components.View.MainMenu} or
+     * close the game.
      */
 
     public String move(final KeyEvent e) {
         return move2(e.getCode());
     }
 
+
+    /**
+     * A {@link java.lang.reflect.Method} used for handling the move inputs, in
+     * regards of the {@link Board}. It is responsible to redraw the board after
+     * move, and for checking if the player has won.
+     *
+     * @param e The {{@link KeyCode} is used for determine
+     *          the direction the player wants to move.
+     * @return A {@link Character} that signals for the {@link BoardGUI} the result
+     * of the move input's handling. Can signal a direction, or a code for
+     * returning to {@link hu.mavenprojekt.Components.View.MainMenu} or
+     * close the game.
+     */
     public String move2(final KeyCode e) {
         String h = null;
         String c = "";

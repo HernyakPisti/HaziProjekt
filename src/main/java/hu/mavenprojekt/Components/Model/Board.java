@@ -1,16 +1,10 @@
 package hu.mavenprojekt.Components.Model;
 
-import java.util.Random;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
+import hu.mavenprojekt.Components.Model.Boardelements.*;
 import org.tinylog.Logger;
 
-import hu.mavenprojekt.Components.Model.Boardelements.Ground;
-import hu.mavenprojekt.Components.Model.Boardelements.Start;
-import hu.mavenprojekt.Components.Model.Boardelements.Target;
-import hu.mavenprojekt.Components.Model.Boardelements.Tile;
-import hu.mavenprojekt.Components.Model.Boardelements.Wall;
+import java.util.Random;
 
 /**
  * A {@link Class} that represents the game's gamearea, the {@link Board}.
@@ -23,6 +17,98 @@ public final class Board {
     private Tile[][] map;
     private Player player;
     private String mapString;
+
+    /**
+     * Default {@link java.lang.reflect.Constructor} for the {@link Board}.
+     */
+    public Board() {
+        this.player = new Player(1, 1);
+        this.map = new Tile[this.N][this.M];
+    }
+
+    /**
+     * {@link java.lang.reflect.Constructor} for the {@link Board}.
+     *
+     * @param p A {@link Player} object.
+     */
+    public Board(final Player p) {
+        this.player = p;
+        this.map = new Tile[this.N][this.M];
+    }
+
+    /**
+     * {@link java.lang.reflect.Constructor} for th {@link Board}.
+     *
+     * @param n An {@link Integer} used to set both dimensions of the {@link Board}.
+     *          Must be positive!
+     */
+    public Board(final int n) {
+        if (n > 0) {
+            this.N = n;
+            this.M = n;
+            this.player = new Player(1, 1);
+            this.map = new Tile[n][n];
+        } else {
+            Logger.error("\"n\" must be greater than 0. Got: " + n);
+        }
+    }
+
+    /**
+     * {@link java.lang.reflect.Constructor} for the {@link Board}.
+     *
+     * @param n An {@link Integer} used to set both dimensions of the {@link Board}.
+     *          Must be positive!
+     * @param p A {@link Player} object, the starting player
+     */
+    public Board(final int n, final Player p) {
+        if (n > 0) {
+            this.N = n;
+            this.M = n;
+            this.player = p;
+            this.map = new Tile[n][n];
+        } else {
+            Logger.error("\"n\" must be greater than 0. Got: " + n);
+        }
+    }
+
+    /**
+     * A {@link java.lang.reflect.Constructor} for the {@link Board}.
+     *
+     * @param n An {@link Integer}, the N parameter of the {@link Board} (the number
+     *          of rows). Must be positive!
+     * @param m An {@link Integer}, the M parameter of the {@link Board} (the number
+     *          of columns). Must be positive!
+     */
+    public Board(final int n, final int m) {
+        if (n > 0 && m > 0) {
+            this.N = n;
+            this.M = m;
+            this.player = new Player(1, 1);
+            this.map = new Tile[n][m];
+        } else {
+            Logger.error("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
+        }
+    }
+
+    /**
+     * A {@link java.lang.reflect.Constructor} for the {@link Board}.
+     *
+     * @param n An {@link Integer}, the N parameter of the {@link Board} (number of
+     *          rows). Must be positive!
+     * @param m An {@link Integer}, the M parameter of the {@link Board} (number of
+     *          columns). Must be positive!
+     * @param p A {@link Player} object, the starting player.
+     */
+    public Board(final int n, final int m, final Player p) {
+        if (n > 0 && m > 0) {
+            this.N = n;
+            this.M = m;
+            this.map = new Tile[n][m];
+            this.player = p;
+        } else {
+            Logger.error("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
+        }
+    }
 
     /**
      * Returns the number of the {@link Board}'s rows.
@@ -115,7 +201,7 @@ public final class Board {
      * {@link String} format.
      *
      * @return A {@link String} that represents the 2D {@link Tile} array of the
-     *         {@link Board}'s map as a {@link String}.
+     * {@link Board}'s map as a {@link String}.
      */
     public String getMapString() {
         this.mapString = toString();
@@ -131,99 +217,6 @@ public final class Board {
     public void setMapString(final String mapString_) {
         this.mapString = mapString_;
         fromString(this.mapString);
-    }
-
-
-    /**
-     * Default {@link java.lang.reflect.Constructor} for the {@link Board}.
-     */
-    public Board() {
-        this.player = new Player(1, 1);
-        this.map = new Tile[this.N][this.M];
-    }
-
-    /**
-     * {@link java.lang.reflect.Constructor} for the {@link Board}.
-     *
-     * @param p A {@link Player} object.
-     */
-    public Board(final Player p) {
-        this.player = p;
-        this.map = new Tile[this.N][this.M];
-    }
-
-    /**
-     * {@link java.lang.reflect.Constructor} for th {@link Board}.
-     *
-     * @param n An {@link Integer} used to set both dimensions of the {@link Board}.
-     *          Must be positive!
-     */
-    public Board(final int n) {
-        if (n > 0) {
-            this.N = n;
-            this.M = n;
-            this.player = new Player(1, 1);
-            this.map = new Tile[n][n];
-        } else {
-            Logger.error("\"n\" must be greater than 0. Got: " + n);
-        }
-    }
-
-    /**
-     * {@link java.lang.reflect.Constructor} for the {@link Board}.
-     *
-     * @param n An {@link Integer} used to set both dimensions of the {@link Board}.
-     *          Must be positive!
-     * @param p A {@link Player} object, the starting player
-     */
-    public Board(final int n, final Player p) {
-        if (n > 0) {
-            this.N = n;
-            this.M = n;
-            this.player = p;
-            this.map = new Tile[n][n];
-        } else {
-            Logger.error("\"n\" must be greater than 0. Got: " + n);
-        }
-    }
-
-    /**
-     * A {@link java.lang.reflect.Constructor} for the {@link Board}.
-     *
-     * @param n An {@link Integer}, the N parameter of the {@link Board} (the number
-     *          of rows). Must be positive!
-     * @param m An {@link Integer}, the M parameter of the {@link Board} (the number
-     *          of columns). Must be positive!
-     */
-    public Board(final int n, final int m) {
-        if (n > 0 && m > 0) {
-            this.N = n;
-            this.M = m;
-            this.player = new Player(1, 1);
-            this.map = new Tile[n][m];
-        } else {
-            Logger.error("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
-        }
-    }
-
-    /**
-     * A {@link java.lang.reflect.Constructor} for the {@link Board}.
-     *
-     * @param n An {@link Integer}, the N parameter of the {@link Board} (number of
-     *          rows). Must be positive!
-     * @param m An {@link Integer}, the M parameter of the {@link Board} (number of
-     *          columns). Must be positive!
-     * @param p A {@link Player} object, the starting player.
-     */
-    public Board(final int n, final int m, final Player p) {
-        if (n > 0 && m > 0) {
-            this.N = n;
-            this.M = m;
-            this.map = new Tile[n][m];
-            this.player = p;
-        } else {
-            Logger.error("\"n\" and \"m\" must be greater than 0. Got n: " + n + ", m: " + m);
-        }
     }
 
     /**

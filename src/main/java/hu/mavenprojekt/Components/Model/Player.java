@@ -1,8 +1,8 @@
 package hu.mavenprojekt.Components.Model;
 
-import java.util.Random;
-
 import org.tinylog.Logger;
+
+import java.util.Random;
 
 /**
  * A {@link Class} that represents the game's {@link Player} object.
@@ -89,7 +89,7 @@ public final class Player {
      * current coordinate.
      *
      * @return An {@link Integer} that represents the {@link Player}'s current X
-     *         coordinate.
+     * coordinate.
      */
     public int getX() {
         return this.x;
@@ -190,7 +190,7 @@ public final class Player {
      * direction.
      *
      * @return A {@link String} that represents the {@link Player}'s current
-     *         direction.
+     * direction.
      */
     public String getCurrentHeading() {
         return this.currentHeading;

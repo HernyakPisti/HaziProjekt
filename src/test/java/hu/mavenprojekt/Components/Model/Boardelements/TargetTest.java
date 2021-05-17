@@ -10,12 +10,12 @@ class TargetTest {
     Target target;
 
     @BeforeEach
-    void init(){
-        target=new Target();
+    void init() {
+        target = new Target();
     }
 
     @Test
     void testToString() {
-        assertEquals("$",target.toString());
+        assertEquals("$", target.toString());
     }
 }

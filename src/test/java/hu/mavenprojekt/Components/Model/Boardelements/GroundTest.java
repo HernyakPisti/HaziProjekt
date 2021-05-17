@@ -10,12 +10,12 @@ class GroundTest {
     Ground ground;
 
     @BeforeEach
-    void init(){
-        ground=new Ground();
+    void init() {
+        ground = new Ground();
     }
 
     @Test
     void testToString() {
-        assertEquals(".",ground.toString());
+        assertEquals(".", ground.toString());
     }
 }

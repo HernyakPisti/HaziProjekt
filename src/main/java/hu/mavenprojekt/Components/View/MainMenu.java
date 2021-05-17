@@ -1,5 +1,6 @@
 package hu.mavenprojekt.Components.View;
 
+import hu.mavenprojekt.Utils.Utils;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -8,14 +9,12 @@ import javafx.scene.control.Spinner;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 import javafx.stage.FileChooser.ExtensionFilter;
-import hu.mavenprojekt.Utils.Utils;
+import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 import java.io.File;
 import java.net.URL;
-
-import org.tinylog.Logger;
 
 /**
  * {@link MainMenu} {@link Class}, represents the games main menu.
@@ -64,8 +63,8 @@ public final class MainMenu implements GUI {
         newGameButton.setDefaultButton(true);
         newGameButton.setOnAction(e -> {
             Logger.info("Clicked on New Game");
-            this.gameGUI = new GameGUI(this, this.stage, (int) spinnerX.getValue() * 40, (int) spinnerY.getValue() * 40,
-                    (int) spinnerY.getValue(), (int) spinnerX.getValue());
+            this.gameGUI = new GameGUI(this, this.stage, spinnerX.getValue() * 40, spinnerY.getValue() * 40,
+                    spinnerY.getValue(), spinnerX.getValue());
             this.stage.setScene(this.gameGUI.getRoot());
 
         });
@@ -132,16 +131,6 @@ public final class MainMenu implements GUI {
     }
 
     /**
-     * A {@link java.lang.reflect.Method} to set the {@link Scene} variable, so it
-     * can be used to get back to the {@link MainMenu} from a game.
-     *
-     * @param scene_ A {@link Scene} the {@link MainMenu} is on.
-     */
-    public void setScene(final Scene scene_) {
-        this.scene = scene_;
-    }
-
-    /**
      * A {@link java.lang.reflect.Method} that returns the {@link Scene} the
      * {@link MainMenu} is on.
      *
@@ -149,6 +138,16 @@ public final class MainMenu implements GUI {
      */
     public Scene getScene() {
         return this.scene;
+    }
+
+    /**
+     * A {@link java.lang.reflect.Method} to set the {@link Scene} variable, so it
+     * can be used to get back to the {@link MainMenu} from a game.
+     *
+     * @param scene_ A {@link Scene} the {@link MainMenu} is on.
+     */
+    public void setScene(final Scene scene_) {
+        this.scene = scene_;
     }
 
     /**

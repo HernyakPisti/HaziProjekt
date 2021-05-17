@@ -10,12 +10,12 @@ class WallTest {
     Wall wall;
 
     @BeforeEach
-    void init(){
-        wall=new Wall();
+    void init() {
+        wall = new Wall();
     }
 
     @Test
     void testToString() {
-        assertEquals("#",wall.toString());
+        assertEquals("#", wall.toString());
     }
 }

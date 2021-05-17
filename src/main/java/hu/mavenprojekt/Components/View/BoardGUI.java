@@ -1,21 +1,20 @@
 package hu.mavenprojekt.Components.View;
 
-import org.tinylog.Logger;
-
 import hu.mavenprojekt.Components.Controller.BoardController;
 import hu.mavenprojekt.Components.Controller.PlayerController;
 import hu.mavenprojekt.Components.Model.Board;
-import hu.mavenprojekt.Components.Model.Player;
 import hu.mavenprojekt.Components.Model.Boardelements.Ground;
 import hu.mavenprojekt.Components.Model.Boardelements.Start;
 import hu.mavenprojekt.Components.Model.Boardelements.Target;
 import hu.mavenprojekt.Components.Model.Boardelements.Wall;
+import hu.mavenprojekt.Components.Model.Player;
 import javafx.geometry.Insets;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
+import org.tinylog.Logger;
 
 /**
  * A {@link Class} that represents the GUI of the gamearea.
@@ -182,7 +181,7 @@ public final class BoardGUI implements GUI {
      * controller.
      *
      * @return A {@link BoardController}, the current game's
-     *         {@link BoardController}.
+     * {@link BoardController}.
      */
     public BoardController getBoardController() {
         return this.boardController;
@@ -193,7 +192,7 @@ public final class BoardGUI implements GUI {
      * {@link Player}'s controller.
      *
      * @return A {@link PlayerController}, the current game's
-     *         {@link PlayerController}.
+     * {@link PlayerController}.
      */
     public PlayerController getPlayerController() {
         return this.playerController;

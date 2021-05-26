@@ -78,6 +78,7 @@ public final class MainMenu implements GUI {
 
         Button resultButton = new Button("Results");
         resultButton.setOnAction(e -> {
+            Logger.info("Clicked on Results");
             ResultsGUI resultsGUI = new ResultsGUI(this);
             this.stage.setScene(new Scene(resultsGUI.getRoot(), 200, 300));
         });

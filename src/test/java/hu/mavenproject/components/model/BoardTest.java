@@ -66,14 +66,13 @@ class BoardTest {
     }
 
     @Test
-    void generetaDefault() {
-        board1.generateDefault();
-        board3.generateDefault();
-        assertEquals(board1.getMap(), board3.getMap());
+    void getMap() {
+        assertTrue(board2.getMap() instanceof Tile[][]);
     }
 
     @Test
-    void getMap() {
-        assertTrue(board2.getMap() instanceof Tile[][]);
+    void generateDefault() {
+        board1.generateDefault();
+        assertTrue(board1.toString().contains("#"));
     }
 }

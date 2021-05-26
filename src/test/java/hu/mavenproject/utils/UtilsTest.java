@@ -17,7 +17,6 @@ import static org.junit.jupiter.api.Assertions.assertNull;
 public class UtilsTest {
 
     Board b;
-    File f1, savefile;
     GUI gui;
     BoardGUI boardGUI;
     BoardController bc;

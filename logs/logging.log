@@ -9295,3 +9295,175 @@ ERROR: Invalid character: }
 ERROR: Invalid character: }
 2021-05-26 09:14:38 [main] hu.mavenproject.components.model.Board.fromString()
 ERROR: Invalid character: }
+2021-05-26 09:50:36 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 09:51:39 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:08:10 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:08:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:08:57 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 5, Y: 3
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 3
+2021-05-26 10:12:35 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:12:35 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:16:56 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:16:57 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 1
+2021-05-26 10:16:57 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:18:38 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 1
+2021-05-26 10:18:38 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 1, Y: 2
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:21:16 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:21:17 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 2
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 2
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 3
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 3
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:26:01 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:26:02 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }
+2021-05-26 10:31:19 [JavaFX Application Thread] hu.mavenproject.components.view.MainMenu.lambda$construct$0()
+INFO: Clicked on Cancel. Closing the game.
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 2
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 3
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 2
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 3
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 3, Y: 3
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 2, Y: 2
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 2, Y: 3
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 3, Y: 2
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Moved to X: 4, Y: 2
+2021-05-26 10:31:43 [main] hu.mavenproject.components.controller.PlayerController.move()
+INFO: Can't move to  X: 4, Y: 2
+2021-05-26 10:31:43 [main] hu.mavenproject.components.model.Board.fromString()
+ERROR: Invalid character: }

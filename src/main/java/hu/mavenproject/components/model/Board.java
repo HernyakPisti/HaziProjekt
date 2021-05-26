@@ -104,6 +104,7 @@ public final class Board {
      * for the {@link Board}.
      */
     public void generateDefault() {
+        this.charMap=new char[N][M];
         for (int i = 0; i < this.N; i++) {
             for (int j = 0; j < this.M; j++) {
                 if (i == this.player.getY() && j == this.player.getX()) {

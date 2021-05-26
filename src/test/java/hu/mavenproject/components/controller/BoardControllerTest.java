@@ -1,22 +1,20 @@
 package hu.mavenproject.components.controller;
 
 import hu.mavenproject.components.model.Board;
-import hu.mavenproject.components.model.Board.DIRECTION;
 import hu.mavenproject.components.model.Player;
+import hu.mavenproject.components.model.Board.DIRECTION;
 import hu.mavenproject.components.view.BoardGUI;
 import hu.mavenproject.components.view.GUI;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import java.io.File;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class BoardControllerTest {
 
-    File file;
     BoardController boardController, boardController2;
     BoardGUI boardGUI;
     Board board, board2;
@@ -25,7 +23,7 @@ class BoardControllerTest {
 
     @BeforeEach
     void init() {
-        file = null;
+
         player = new Player();
         board = new Board();
         board2 = new Board(5, 5);
@@ -45,25 +43,29 @@ class BoardControllerTest {
 
     @Test
     void move() {
-        KeyEvent k1 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.D.toString(), KeyCode.D.toString(), KeyCode.D, false,
+        KeyEvent right = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.D.toString(), KeyCode.D.toString(), KeyCode.D, false,
                 false, false, false);
-        KeyEvent k2 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.S.toString(), KeyCode.S.toString(), KeyCode.S, false,
+        KeyEvent down = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.S.toString(), KeyCode.S.toString(), KeyCode.S, false,
                 false, false, false);
-        KeyEvent k3 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.A.toString(), KeyCode.A.toString(), KeyCode.A, false,
+        KeyEvent left = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.A.toString(), KeyCode.A.toString(), KeyCode.A, false,
                 false, false, false);
-        KeyEvent k4 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.W.toString(), KeyCode.W.toString(), KeyCode.W, false,
+        KeyEvent up = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.W.toString(), KeyCode.W.toString(), KeyCode.W, false,
                 false, false, false);
-        KeyEvent k5 = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.Q.toString(), KeyCode.Q.toString(), KeyCode.Q, false,
+        KeyEvent q = new KeyEvent(KeyEvent.KEY_PRESSED, KeyCode.Q.toString(), KeyCode.Q.toString(), KeyCode.Q, false,
                 false, false, false);
         boardController.generateDefaultBoard();
-        assertEquals(DIRECTION.RIGHT, boardController.move(k1));
-        assertEquals(DIRECTION.DOWN, boardController.move(k2));
-        assertEquals(DIRECTION.LEFT, boardController.move(k3));
-        assertEquals(DIRECTION.UP, boardController.move(k4));
-        assertEquals(-1, boardController.move(k3));
-        assertEquals(DIRECTION.RIGHT, boardController.move(k1));
-        assertEquals(DIRECTION.RIGHT, boardController.move(k1));
-        assertEquals(-1, boardController.move(k5));
+        assertEquals(DIRECTION.RIGHT, boardController.move(right));
+        assertEquals(-1, boardController.move(left));
+        assertEquals(DIRECTION.DOWN, boardController.move(down));
+        assertEquals(-1, boardController.move(up));
+        assertEquals(DIRECTION.LEFT, boardController.move(left));
+        assertEquals(-1, boardController.move(right));
+        assertEquals(DIRECTION.UP, boardController.move(up));
+        assertEquals(-1,boardController.move(down));
+        assertEquals(DIRECTION.RIGHT, boardController.move(right));
+        assertEquals(DIRECTION.RIGHT, boardController.move(right));
+        assertEquals(-1,boardController.move(q));
+
     }
 
     @Test
@@ -80,6 +82,6 @@ class BoardControllerTest {
 
     @Test
     void getPlayer() {
-        assertSame(player.toString(), boardController.getBoard().getPlayer().toString());
+        assertSame(player.toString(), boardController.getPlayer().toString());
     }
 }

@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>hu.mavenprojekt</groupId>
-    <artifactId>mavenprojekt</artifactId>
+    <groupId>hu.mavenproject</groupId>
+    <artifactId>mavenproject</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
     <description>A homework projekt for my SWE class.</description>
@@ -22,19 +22,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.outputEncoding>UTF-8</project.build.outputEncoding>
         <maven.compiler.release>16</maven.compiler.release>
-        <exec.mainClass>hu.mavenprojekt.Main</exec.mainClass>
+        <exec.mainClass>hu.mavenproject.Main</exec.mainClass>
         <javafx.version>16</javafx.version>
         <junit.jupiter.version>5.7.1</junit.jupiter.version>
         <jacoco.version>0.8.7</jacoco.version>
         <surefire.version>3.0.0-M5</surefire.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -54,14 +48,14 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-graphics</artifactId>
-            <version>${javafx.version}</version>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-graphics</artifactId>
+          <version>${javafx.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.openjfx</groupId>
-            <artifactId>javafx-base</artifactId>
-            <version>17-ea+7</version>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-base</artifactId>
+          <version>17-ea+7</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -79,24 +73,24 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.12.3</version>
         </dependency>
-            <dependency>
-                <groupId>org.tinylog</groupId>
-                <artifactId>tinylog-api</artifactId>
-                <version>2.3.1</version>
-            </dependency>
-            <dependency>
-                <groupId>org.tinylog</groupId>
-                <artifactId>tinylog-impl</artifactId>
-                <version>2.3.1</version>
-            </dependency>
+        <dependency>
+          <groupId>org.tinylog</groupId>
+          <artifactId>tinylog-api</artifactId>
+          <version>2.3.1</version>
+        </dependency>
+         <dependency>
+            <groupId>org.tinylog</groupId>
+            <artifactId>tinylog-impl</artifactId>
+            <version>2.3.1</version>
+        </dependency>
     </dependencies>
 
 
     <build>
         <plugins>
             <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <version>3.1.0</version>
+              <artifactId>maven-clean-plugin</artifactId>
+              <version>3.1.0</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -203,7 +197,7 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <configLocation>checkstyle.xml</configLocation>
+                    <configLocation>checkstyle.xml</configLocation> 
                 </configuration>
             </plugin>
             <plugin>

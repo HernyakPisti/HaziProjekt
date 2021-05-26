@@ -1,10 +1,12 @@
+# **MAVEN PROJECT**
+
 ## This is a java/maven based project of a game, where you can only go straight and to the right.
 
 ---
 
 The goal in this game is to reach the target on the board with your character by **only** going straight or turn right.
 
-![The game](./src/main/resources/game.png)
+![The game](./images/game.jpg)
 
 The game is written in pure java language, with [Apache - Maven](https://maven.apache.org/) project management and [javafx GUI](https://openjfx.io/)
 

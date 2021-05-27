@@ -14,9 +14,12 @@ import javafx.scene.control.ButtonType;
 import org.tinylog.Logger;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -119,19 +122,34 @@ public final class Utils {
     /**
      * A {@link java.lang.reflect.Method} that saves the result to a file.
      *
-     * @param file The {@link URL} for the results file.
      * @param p    The {@link Player} object.
      */
-    public static void writeResults(URL file, Player p) {
+    public static void writeResults(Player p) {
         ObjectMapper objectMapper = new ObjectMapper();
         TypeFactory typeFactory = objectMapper.getTypeFactory();
+        File f = Paths.get("./results.json").toFile();
+        if (!f.exists()) {
+            try {
+                f.createNewFile();
+            } catch (IOException e) {
+                Logger.error(e.getMessage());
+            }
+        }
+        List<Result> resultList = null;
         try {
-            List<Result> resultList = objectMapper.readValue(file,
+            resultList = objectMapper.readValue(new FileInputStream("results.json"),
                     typeFactory.constructCollectionType(List.class, Result.class));
-            resultList.add(new Result(p.getName(), p.getScore()));
-            File JsonFile = Paths.get(file.toURI()).toFile();
-            objectMapper.writeValue(JsonFile, resultList);
         } catch (Exception e) {
+            Logger.error(e.getMessage());
+        }
+        if (resultList == null) {
+            resultList = new ArrayList<Result>();
+        }
+        Result r = new Result(p.getName(), p.getScore());
+        resultList.add(r);
+        try {
+            objectMapper.writeValue(new FileOutputStream("results.json"), resultList);
+        } catch (IOException e) {
             Logger.error(e.getMessage());
         }
     }

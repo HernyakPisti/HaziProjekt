@@ -11,8 +11,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import org.tinylog.Logger;
 
-import java.net.URL;
-
 /**
  * The {@link Class} that is responsible for controoling the game's
  * {@link Board} depending on the inputs.
@@ -93,8 +91,7 @@ public final class BoardController {
             Logger.info("Game finished");
             try {
                 Integer result = Utils.showAlert();
-                URL file = getClass().getResource("/results.json");
-                Utils.writeResults(file, board.getPlayer());
+                Utils.writeResults(board.getPlayer());
                 if (result == null) {
                     throw new NullPointerException();
                 } else if (result == 0) {

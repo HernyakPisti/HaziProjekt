@@ -12,7 +12,11 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.VBox;
 import org.tinylog.Logger;
 
-import java.net.URL;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
@@ -54,17 +58,28 @@ public class ResultsGUI implements GUI {
         this.view = null;
         ObjectMapper objectMapper = new ObjectMapper();
         TypeFactory typeFactory = objectMapper.getTypeFactory();
-        URL file = getClass().getResource("/results.json");
+        File file = Paths.get("./results.json").toFile();
+        if (!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException ex) {
+                Logger.error(ex.getMessage());
+            }
+        }
+        List<Result> resultList = null;
         try {
-            List<Result> resultList = objectMapper.readValue(file,
+            resultList = objectMapper.readValue(new FileInputStream("results.json"),
                     typeFactory.constructCollectionType(List.class, Result.class));
-            ObservableList<Result> items = FXCollections.observableArrayList(resultList);
-            Comparator<Result> comparator = Comparator.comparingInt(Result::getScore);
-            FXCollections.sort(items, comparator);
-            this.view = new ListView<Result>(items);
         } catch (Exception e) {
             Logger.error(e.getMessage());
         }
+        if (resultList == null) {
+            resultList = new ArrayList<Result>();
+        }
+        ObservableList<Result> items = FXCollections.observableArrayList(resultList);
+        Comparator<Result> comparator = Comparator.comparingInt(Result::getScore);
+        FXCollections.sort(items, comparator);
+        this.view = new ListView<Result>(items);
         this.root.getChildren().addAll(this.view, backButton);
     }
 
